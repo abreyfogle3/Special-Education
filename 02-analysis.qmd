@@ -1,0 +1,49 @@
+---
+title: "02-analysis"
+format: html
+---
+
+## Goals of this notebook
+
+The steps we'll take to prepare our data:
+
+- Download the data
+- Import it into our notebook
+- Clean up data types and columns
+- Export the data for next notebook
+
+## Setup
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+library(janitor)
+library(dplyr)
+library(readxl)
+```
+
+## Import cleaned data
+
+```{r}
+read_rds("data-processed/01-cleaning.rds")
+```
+
+## Show the change in enrollment
+
+```{r}
+enrollment_change <- removal_enrollment |>
+   mutate(
+    special_education_change = (
+      ((x2026_2027 - x2025_2026) / x2025_2026) * 100
+    ) |> round_half_up(1)
+  ) |> 
+  arrange(desc(special_education_change))
+
+enrollment_change
+```
+
+
+
+
