@@ -27,7 +27,7 @@ library(readxl)
 ## Import cleaned data
 
 ```{r}
-read_rds("data-processed/01-cleaning.rds")
+removal_enrollment <- read_rds("data-processed/01-cleaning.rds")
 ```
 
 ## Show the change in enrollment

@@ -1,6 +1,6 @@
 
-*.html 
-_site/ 
+*.html
+_site/
 .Rproj.user/
 
 # R
@@ -18,3 +18,8 @@ _book/
 
 # System
 .DS_Store
+
+/.quarto/
+/_site/
+
+**/*.quarto_ipynb
