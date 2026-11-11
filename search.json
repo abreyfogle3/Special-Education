@@ -1,0 +1,172 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Breyfogle-HoustonSpecialEdProject",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "02-analysis.html",
+    "href": "02-analysis.html",
+    "title": "02-analysis",
+    "section": "",
+    "text": "The steps we’ll take to prepare our data:\n\nDownload the data\nImport it into our notebook\nClean up data types and columns\nExport the data for next notebook",
+    "crumbs": [
+      "02-analysis"
+    ]
+  },
+  {
+    "objectID": "02-analysis.html#goals-of-this-notebook",
+    "href": "02-analysis.html#goals-of-this-notebook",
+    "title": "02-analysis",
+    "section": "",
+    "text": "The steps we’ll take to prepare our data:\n\nDownload the data\nImport it into our notebook\nClean up data types and columns\nExport the data for next notebook",
+    "crumbs": [
+      "02-analysis"
+    ]
+  },
+  {
+    "objectID": "02-analysis.html#setup",
+    "href": "02-analysis.html#setup",
+    "title": "02-analysis",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(dplyr)\nlibrary(readxl)",
+    "crumbs": [
+      "02-analysis"
+    ]
+  },
+  {
+    "objectID": "02-analysis.html#import-cleaned-data",
+    "href": "02-analysis.html#import-cleaned-data",
+    "title": "02-analysis",
+    "section": "Import cleaned data",
+    "text": "Import cleaned data\n\nremoval_enrollment &lt;- read_rds(\"data-processed/01-cleaning.rds\")",
+    "crumbs": [
+      "02-analysis"
+    ]
+  },
+  {
+    "objectID": "02-analysis.html#show-the-change-in-enrollment",
+    "href": "02-analysis.html#show-the-change-in-enrollment",
+    "title": "02-analysis",
+    "section": "Show the change in enrollment",
+    "text": "Show the change in enrollment\n\nenrollment_change &lt;- removal_enrollment |&gt;\n   mutate(\n    special_education_change = (\n      ((x2026_2027 - x2025_2026) / x2025_2026) * 100\n    ) |&gt; round_half_up(1)\n  ) |&gt; \n  arrange(desc(special_education_change))\n\nenrollment_change",
+    "crumbs": [
+      "02-analysis"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html",
+    "href": "01-cleaning.html",
+    "title": "Cleaning",
+    "section": "",
+    "text": "The steps we’ll take to prepare our data:\n\nDownload the data\nImport it into our notebook\nClean up data types and columns\nExport the data for next notebook",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#goals-of-this-notebook",
+    "href": "01-cleaning.html#goals-of-this-notebook",
+    "title": "Cleaning",
+    "section": "",
+    "text": "The steps we’ll take to prepare our data:\n\nDownload the data\nImport it into our notebook\nClean up data types and columns\nExport the data for next notebook",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#setup",
+    "href": "01-cleaning.html#setup",
+    "title": "Cleaning",
+    "section": "Setup",
+    "text": "Setup\n\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(dplyr)\nlibrary(readxl)",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#importing",
+    "href": "01-cleaning.html#importing",
+    "title": "Cleaning",
+    "section": "Importing",
+    "text": "Importing\n\nspecial_ed_2025_employeelist_original &lt;- read_excel(\n \"data-original/R000124-082126-September_2025-Employee_List.xlsx\"\n)\n\n\nspecial_ed_2026_employeelist_original &lt;- read_excel(\n \"data-original/R000124-082126-September_2026_Employee_List.xlsx\"\n)\n\nWarning: Expecting date in F4634 / R4634C6: got '#'\n\n\nWarning: Expecting date in F5315 / R5315C6: got '#'\n\n\nWarning: Expecting date in F14144 / R14144C6: got '#'\n\n\nWarning: Expecting date in F15800 / R15800C6: got '#'\n\n\nWarning: Expecting date in F17662 / R17662C6: got '#'\n\n\n\nspecial_ed_enrollment_original &lt;- read_excel(\n \"data-original/R000124-082126-SPED_Enrollment.xlsx\"\n)",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#cleaning-names",
+    "href": "01-cleaning.html#cleaning-names",
+    "title": "Cleaning",
+    "section": "Cleaning names",
+    "text": "Cleaning names\n\nemployeelist_2025_names &lt;- special_ed_2025_employeelist_original |&gt; \n  clean_names()\n\nemployeelist_2025_names |&gt; glimpse()\n\nRows: 23,833\nColumns: 8\n$ first_name                  &lt;chr&gt; \"Trae\", \"Kerri\", \"Lori\", \"Nelva\", \"Phillip…\n$ middle_name                 &lt;chr&gt; \"Suzanne\", \"A\", \"Amare\", \"Q\", \"Derrick\", \"…\n$ last_name                   &lt;chr&gt; \"Muhammad\", \"Lyons\", \"Bujung\", \"Williamson…\n$ job_title                   &lt;chr&gt; \"NES 8th Grade ELA ESL Teacher\", \"Tchr, Pr…\n$ organizational_unit_name    &lt;chr&gt; \"Thomas MS\", \"Kolter ES\", \"Marshall MS\", \"…\n$ latest_hire_date            &lt;dttm&gt; 2012-12-17, 1982-08-25, 2008-09-23, 1980-…\n$ total_experience_hisd_other &lt;chr&gt; \"21\", \"43\", \"21\", \"45\", \"21\", \"22\", \"33\", …\n$ total_hisd_experience       &lt;chr&gt; \"21\", \"43\", \"18\", \"45\", \"21\", \"22\", \"33\", …\n\n\n\nemployeelist_2026_names &lt;- special_ed_2026_employeelist_original |&gt; \n  clean_names()\n\nemployeelist_2026_names |&gt; glimpse()\n\nRows: 22,321\nColumns: 8\n$ first_name                  &lt;chr&gt; \"Trae\", \"Kerri\", \"Lori\", \"Phillip\", \"Rohin…\n$ middle_name                 &lt;chr&gt; \"Suzanne\", \"A\", \"Amare\", \"Derrick\", \"Reyah…\n$ last_name                   &lt;chr&gt; \"Muhammad\", \"Lyons\", \"Bujung\", \"Hall\", \"Va…\n$ job_title                   &lt;chr&gt; \"NES 8th Grade ELA ESL Teacher\", \"Tchr, Pr…\n$ organizational_unit_name    &lt;chr&gt; \"Thomas MS\", \"Kolter ES\", \"Marshall MS\", \"…\n$ latest_hire_date            &lt;dttm&gt; 2012-12-17, 1982-08-25, 2008-09-23, 2020-…\n$ total_experience_hisd_other &lt;chr&gt; \"22\", \"44\", \"22\", \"22\", \"23\", \"34\", \"35\", …\n$ total_hisd_experience       &lt;chr&gt; \"22\", \"44\", \"19\", \"22\", \"23\", \"34\", \"35\", …\n\n\n\nenrollment_numbers &lt;- special_ed_enrollment_original |&gt; \n  clean_names()\n\nenrollment_numbers |&gt; glimpse()\n\nRows: 271\nColumns: 3\n$ campus &lt;chr&gt; \"101912001 - AUSTIN H S\", \"101912002 - BELLAIRE H S\", \"10191200…\n$ x25_26 &lt;chr&gt; \"145\", \"252\", \"136\", \"109\", \"52\", \"107\", \"233\", \"112\", \"208\", \"…\n$ x26_27 &lt;chr&gt; \"125\", \"246\", \"97\", \"106\", \"29\", \"74\", \"228\", \"126\", \"207\", \"18…",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#separation-of-shutdown-schools",
+    "href": "01-cleaning.html#separation-of-shutdown-schools",
+    "title": "Cleaning",
+    "section": "Separation of Shutdown Schools",
+    "text": "Separation of Shutdown Schools\n\nshutdown_enrollment_numbers &lt;- enrollment_numbers |&gt; \n  mutate(\n    school_active = case_when(\n      is.na(x26_27) ~ \"Closed\",\n      TRUE ~ \"Open\"\n    ))\n\nshutdown_enrollment_numbers",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#creating-new-columns-to-handle-10-schools",
+    "href": "01-cleaning.html#creating-new-columns-to-handle-10-schools",
+    "title": "Cleaning",
+    "section": "Creating new columns to handle <10 Schools",
+    "text": "Creating new columns to handle &lt;10 Schools\n\nenrollment_number_10 &lt;- shutdown_enrollment_numbers |&gt;\n  mutate(\n    x2025_2026 = case_when(\n      x25_26 &lt; 10 ~ NA,\n      is.na(x25_26) ~ 0,\n      .default = as.numeric(x25_26)),\n     x2026_2027 = case_when(\n      x26_27 &lt; 10 ~ NA,\n      is.na(x26_27) ~ 0,\n      .default = as.numeric(x26_27),\n    )\n  )\n\nWarning: There were 2 warnings in `mutate()`.\nThe first warning was:\nℹ In argument: `x2025_2026 = case_when(x25_26 &lt; 10 ~ NA, is.na(x25_26) ~ 0,\n  .default = as.numeric(x25_26))`.\nCaused by warning in `vec_case_when()`:\n! NAs introduced by coercion\nℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.\n\nenrollment_number_10",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#make-separate-section-for-na-rows",
+    "href": "01-cleaning.html#make-separate-section-for-na-rows",
+    "title": "Cleaning",
+    "section": "Make Separate Section for NA Rows",
+    "text": "Make Separate Section for NA Rows\n\nna_rows_enrollment &lt;- enrollment_number_10 |&gt;\n  filter(\n    is.na(x2025_2026) | is.na(x2026_2027)\n  )\n\nna_rows_enrollment",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#remove-na-rows-and-remove-old-columns",
+    "href": "01-cleaning.html#remove-na-rows-and-remove-old-columns",
+    "title": "Cleaning",
+    "section": "Remove NA Rows and Remove old columns",
+    "text": "Remove NA Rows and Remove old columns\n\nremoval_enrollment &lt;- enrollment_number_10 |&gt;\n  filter(\n    !is.na(x2025_2026),\n    !is.na(x2026_2027)\n  ) |&gt;\n  select(\n    campus,\n    school_active,\n    x2025_2026,\n    x2026_2027\n  ) \n  \nremoval_enrollment",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "01-cleaning.html#export",
+    "href": "01-cleaning.html#export",
+    "title": "Cleaning",
+    "section": "Export",
+    "text": "Export\n\nremoval_enrollment |&gt;\n   write_rds(\"data-processed/01-cleaning.rds\")",
+    "crumbs": [
+      "Cleaning"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "About"
+    ]
+  }
+]

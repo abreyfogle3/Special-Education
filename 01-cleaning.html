@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cleaning – Houston Special Ed Project</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6e268169e3b58a97b39eb04411ed87c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-cleaning.html">Cleaning</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Houston Special Ed Project</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-cleaning.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Cleaning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">02-analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#goals-of-this-notebook" id="toc-goals-of-this-notebook" class="nav-link active" data-scroll-target="#goals-of-this-notebook">Goals of this notebook</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#importing" id="toc-importing" class="nav-link" data-scroll-target="#importing">Importing</a></li>
+  <li><a href="#cleaning-names" id="toc-cleaning-names" class="nav-link" data-scroll-target="#cleaning-names">Cleaning names</a></li>
+  <li><a href="#separation-of-shutdown-schools" id="toc-separation-of-shutdown-schools" class="nav-link" data-scroll-target="#separation-of-shutdown-schools">Separation of Shutdown Schools</a></li>
+  <li><a href="#creating-new-columns-to-handle-10-schools" id="toc-creating-new-columns-to-handle-10-schools" class="nav-link" data-scroll-target="#creating-new-columns-to-handle-10-schools">Creating new columns to handle &lt;10 Schools</a></li>
+  <li><a href="#make-separate-section-for-na-rows" id="toc-make-separate-section-for-na-rows" class="nav-link" data-scroll-target="#make-separate-section-for-na-rows">Make Separate Section for NA Rows</a></li>
+  <li><a href="#remove-na-rows-and-remove-old-columns" id="toc-remove-na-rows-and-remove-old-columns" class="nav-link" data-scroll-target="#remove-na-rows-and-remove-old-columns">Remove NA Rows and Remove old columns</a></li>
+  <li><a href="#export" id="toc-export" class="nav-link" data-scroll-target="#export">Export</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cleaning</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="goals-of-this-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="goals-of-this-notebook">Goals of this notebook</h2>
+<p>The steps we’ll take to prepare our data:</p>
+<ul>
+<li>Download the data</li>
+<li>Import it into our notebook</li>
+<li>Clean up data types and columns</li>
+<li>Export the data for next notebook</li>
+</ul>
+</section>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="importing" class="level2">
+<h2 class="anchored" data-anchor-id="importing">Importing</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>special_ed_2025_employeelist_original <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> <span class="st">"data-original/R000124-082126-September_2025-Employee_List.xlsx"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>special_ed_2026_employeelist_original <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="st">"data-original/R000124-082126-September_2026_Employee_List.xlsx"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting date in F4634 / R4634C6: got '#'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting date in F5315 / R5315C6: got '#'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting date in F14144 / R14144C6: got '#'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting date in F15800 / R15800C6: got '#'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Expecting date in F17662 / R17662C6: got '#'</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>special_ed_enrollment_original <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a> <span class="st">"data-original/R000124-082126-SPED_Enrollment.xlsx"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="cleaning-names" class="level2">
+<h2 class="anchored" data-anchor-id="cleaning-names">Cleaning names</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>employeelist_2025_names <span class="ot">&lt;-</span> special_ed_2025_employeelist_original <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>employeelist_2025_names <span class="sc">|&gt;</span> <span class="fu">glimpse</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 23,833
+Columns: 8
+$ first_name                  &lt;chr&gt; "Trae", "Kerri", "Lori", "Nelva", "Phillip…
+$ middle_name                 &lt;chr&gt; "Suzanne", "A", "Amare", "Q", "Derrick", "…
+$ last_name                   &lt;chr&gt; "Muhammad", "Lyons", "Bujung", "Williamson…
+$ job_title                   &lt;chr&gt; "NES 8th Grade ELA ESL Teacher", "Tchr, Pr…
+$ organizational_unit_name    &lt;chr&gt; "Thomas MS", "Kolter ES", "Marshall MS", "…
+$ latest_hire_date            &lt;dttm&gt; 2012-12-17, 1982-08-25, 2008-09-23, 1980-…
+$ total_experience_hisd_other &lt;chr&gt; "21", "43", "21", "45", "21", "22", "33", …
+$ total_hisd_experience       &lt;chr&gt; "21", "43", "18", "45", "21", "22", "33", …</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>employeelist_2026_names <span class="ot">&lt;-</span> special_ed_2026_employeelist_original <span class="sc">|&gt;</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>employeelist_2026_names <span class="sc">|&gt;</span> <span class="fu">glimpse</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 22,321
+Columns: 8
+$ first_name                  &lt;chr&gt; "Trae", "Kerri", "Lori", "Phillip", "Rohin…
+$ middle_name                 &lt;chr&gt; "Suzanne", "A", "Amare", "Derrick", "Reyah…
+$ last_name                   &lt;chr&gt; "Muhammad", "Lyons", "Bujung", "Hall", "Va…
+$ job_title                   &lt;chr&gt; "NES 8th Grade ELA ESL Teacher", "Tchr, Pr…
+$ organizational_unit_name    &lt;chr&gt; "Thomas MS", "Kolter ES", "Marshall MS", "…
+$ latest_hire_date            &lt;dttm&gt; 2012-12-17, 1982-08-25, 2008-09-23, 2020-…
+$ total_experience_hisd_other &lt;chr&gt; "22", "44", "22", "22", "23", "34", "35", …
+$ total_hisd_experience       &lt;chr&gt; "22", "44", "19", "22", "23", "34", "35", …</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>enrollment_numbers <span class="ot">&lt;-</span> special_ed_enrollment_original <span class="sc">|&gt;</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>()</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>enrollment_numbers <span class="sc">|&gt;</span> <span class="fu">glimpse</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 271
+Columns: 3
+$ campus &lt;chr&gt; "101912001 - AUSTIN H S", "101912002 - BELLAIRE H S", "10191200…
+$ x25_26 &lt;chr&gt; "145", "252", "136", "109", "52", "107", "233", "112", "208", "…
+$ x26_27 &lt;chr&gt; "125", "246", "97", "106", "29", "74", "228", "126", "207", "18…</code></pre>
+</div>
+</div>
+</section>
+<section id="separation-of-shutdown-schools" class="level2">
+<h2 class="anchored" data-anchor-id="separation-of-shutdown-schools">Separation of Shutdown Schools</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>shutdown_enrollment_numbers <span class="ot">&lt;-</span> enrollment_numbers <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">school_active =</span> <span class="fu">case_when</span>(</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">is.na</span>(x26_27) <span class="sc">~</span> <span class="st">"Closed"</span>,</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Open"</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>shutdown_enrollment_numbers</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["campus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["x25_26"],"name":[2],"type":["chr"],"align":["left"]},{"label":["x26_27"],"name":[3],"type":["chr"],"align":["left"]},{"label":["school_active"],"name":[4],"type":["chr"],"align":["left"]}],"data":[{"1":"101912001 - AUSTIN H S","2":"145","3":"125","4":"Open"},{"1":"101912002 - BELLAIRE H S","2":"252","3":"246","4":"Open"},{"1":"101912003 - NORTHSIDE H S","2":"136","3":"97","4":"Open"},{"1":"101912004 - FURR H S","2":"109","3":"106","4":"Open"},{"1":"101912006 - JONES FUTURES ACADEMY","2":"52","3":"29","4":"Open"},{"1":"101912007 - KASHMERE H S","2":"107","3":"74","4":"Open"},{"1":"101912008 - LAMAR H S","2":"233","3":"228","4":"Open"},{"1":"101912009 - WISDOM H S","2":"112","3":"126","4":"Open"},{"1":"101912010 - MADISON H S","2":"208","3":"207","4":"Open"},{"1":"101912011 - MILBY H S","2":"252","3":"181","4":"Open"},{"1":"101912012 - HEIGHTS H S","2":"250","3":"260","4":"Open"},{"1":"101912013 - COMMUNITY SERVICES-SEC","2":"<10","3":"<10","4":"Open"},{"1":"101912014 - STERLING H S","2":"166","3":"188","4":"Open"},{"1":"101912015 - WALTRIP H S","2":"215","3":"255","4":"Open"},{"1":"101912016 - WASHINGTON B T H S","2":"116","3":"96","4":"Open"},{"1":"101912017 - WESTBURY H S","2":"196","3":"204","4":"Open"},{"1":"101912018 - WHEATLEY H S","2":"101","3":"115","4":"Open"},{"1":"101912019 - WORTHING H S","2":"124","3":"99","4":"Open"},{"1":"101912020 - YATES H S","2":"137","3":"155","4":"Open"},{"1":"101912023 - SHARPSTOWN H S","2":"134","3":"114","4":"Open"},{"1":"101912024 - SCARBOROUGH H S","2":"68","3":"44","4":"Open"},{"1":"101912025 - KINDER H S FOR PERFORMING AND VISUAL ARTS","2":"20","3":"23","4":"Open"},{"1":"101912026 - DEBAKEY H S FOR HEALTH PROF","2":"19","3":"17","4":"Open"},{"1":"101912027 - CHAVEZ H S","2":"211","3":"182","4":"Open"},{"1":"101912034 - H S FOR LAW AND JUSTICE","2":"20","3":"17","4":"Open"},{"1":"101912036 - WESTSIDE H S","2":"214","3":"168","4":"Open"},{"1":"101912039 - T H ROGERS SCHOOL","2":"64","3":"40","4":"Open"},{"1":"101912041 - ATTUCKS MIDDLE","2":"82","3":"111","4":"Open"},{"1":"101912042 - BLACK MIDDLE","2":"162","3":"210","4":"Open"},{"1":"101912043 - BURBANK MIDDLE","2":"158","3":"177","4":"Open"},{"1":"101912044 - CULLEN MIDDLE","2":"85","3":"113","4":"Open"},{"1":"101912045 - DEADY MIDDLE","2":"82","3":"64","4":"Open"},{"1":"101912046 - EDISON MIDDLE","2":"84","3":"114","4":"Open"},{"1":"101912047 - FONVILLE MIDDLE","2":"84","3":"97","4":"Open"},{"1":"101912048 - CLIFTON MIDDLE","2":"45","3":"26","4":"Open"},{"1":"101912049 - HAMILTON MIDDLE","2":"152","3":"158","4":"Open"},{"1":"101912050 - HOLLAND MIDDLE","2":"74","3":"90","4":"Open"},{"1":"101912051 - HARTMAN MIDDLE","2":"105","3":"170","4":"Open"},{"1":"101912052 - HENRY MIDDLE","2":"92","3":"56","4":"Open"},{"1":"101912053 - HOGG MIDDLE","2":"163","3":"179","4":"Open"},{"1":"101912054 - NAVARRO MIDDLE","2":"60","3":"62","4":"Open"},{"1":"101912055 - MEYERLAND MIDDLE","2":"185","3":"181","4":"Open"},{"1":"101912056 - WELCH MIDDLE","2":"71","3":"102","4":"Open"},{"1":"101912057 - LANIER MIDDLE","2":"111","3":"108","4":"Open"},{"1":"101912058 - GREGORY-LINCOLN ED CTR","2":"66","3":"108","4":"Open"},{"1":"101912059 - LONG ACADEMY","2":"64","3":"43","4":"Open"},{"1":"101912060 - REVERE MIDDLE","2":"86","3":"122","4":"Open"},{"1":"101912061 - MARSHALL MIDDLE","2":"65","3":"83","4":"Open"},{"1":"101912062 - FLEMING MCREYNOLDS MIDDLE","2":"75","3":"77","4":"Open"},{"1":"101912064 - PERSHING MIDDLE","2":"165","3":"163","4":"Open"},{"1":"101912068 - TANGLEWOOD MIDDLE","2":"110","3":"163","4":"Open"},{"1":"101912069 - SOAR CENTER","2":"267","3":"39","4":"Open"},{"1":"101912071 - PROJECT CHRYSALIS MIDDLE","2":"22","3":"26","4":"Open"},{"1":"101912072 - FONDREN MIDDLE","2":"69","3":"104","4":"Open"},{"1":"101912075 - LAWSON MIDDLE","2":"162","3":"114","4":"Open"},{"1":"101912077 - THOMAS MIDDLE","2":"106","3":"49","4":"Open"},{"1":"101912078 - FLEMING MIDDLE","2":"68","3":"NA","4":"Closed"},{"1":"101912079 - KEY MIDDLE","2":"91","3":"69","4":"Open"},{"1":"101912080 - RICE SCH /LA ESCUELA RICE","2":"146","3":"145","4":"Open"},{"1":"101912081 - SHARPSTOWN INTERNATIONAL SCHOOL","2":"108","3":"97","4":"Open"},{"1":"101912082 - WILLIAMS MIDDLE","2":"66","3":"36","4":"Open"},{"1":"101912097 - HCC LIFE SKILLS PROGRAM","2":"61","3":"66","4":"Open"},{"1":"101912098 - STEVENSON MIDDLE","2":"148","3":"117","4":"Open"},{"1":"101912099 - WEST BRIAR MIDDLE","2":"105","3":"97","4":"Open"},{"1":"101912100 - TEXAS CONNECTIONS ACADEMY AT HOUSTON","2":"1315","3":"1088","4":"Open"},{"1":"101912102 - ALCOTT EL","2":"43","3":"NA","4":"Closed"},{"1":"101912104 - ALMEDA EL","2":"102","3":"114","4":"Open"},{"1":"101912105 - ANDERSON EL","2":"48","3":"84","4":"Open"},{"1":"101912106 - ATHERTON EL","2":"58","3":"54","4":"Open"},{"1":"101912107 - BARRICK EL","2":"28","3":"11","4":"Open"},{"1":"101912108 - BASTIAN EL","2":"74","3":"76","4":"Open"},{"1":"101912109 - BERRY EL","2":"76","3":"85","4":"Open"},{"1":"101912110 - BLACKSHEAR EL","2":"33","3":"10","4":"Open"},{"1":"101912111 - BONHAM EL","2":"80","3":"76","4":"Open"},{"1":"101912112 - BONNER EL","2":"79","3":"116","4":"Open"},{"1":"101912113 - RODERICK R PAIGE EL","2":"64","3":"58","4":"Open"},{"1":"101912114 - BRAEBURN EL","2":"117","3":"105","4":"Open"},{"1":"101912115 - DURHAM EL","2":"57","3":"43","4":"Open"},{"1":"101912116 - BRIARGROVE EL","2":"117","3":"96","4":"Open"},{"1":"101912117 - BRISCOE EL","2":"50","3":"NA","4":"Closed"},{"1":"101912119 - BROOKLINE EL","2":"50","3":"27","4":"Open"},{"1":"101912120 - BROWNING EL","2":"44","3":"37","4":"Open"},{"1":"101912121 - BRUCE EL","2":"49","3":"34","4":"Open"},{"1":"101912122 - BURBANK EL","2":"111","3":"75","4":"Open"},{"1":"101912123 - CODWELL EL","2":"53","3":"54","4":"Open"},{"1":"101912124 - BURNET EL","2":"45","3":"33","4":"Open"},{"1":"101912125 - BURRUS EL","2":"25","3":"NA","4":"Closed"},{"1":"101912127 - WOODSON SCHOOL","2":"62","3":"92","4":"Open"},{"1":"101912128 - LYONS EL","2":"69","3":"98","4":"Open"},{"1":"101912130 - CONDIT EL","2":"138","3":"112","4":"Open"},{"1":"101912131 - HALPIN EARLY CHILDHOOD CTR","2":"38","3":"39","4":"Open"},{"1":"101912132 - COOP EL","2":"55","3":"58","4":"Open"},{"1":"101912133 - CORNELIUS EL","2":"78","3":"62","4":"Open"},{"1":"101912135 - CROCKETT EL","2":"64","3":"55","4":"Open"},{"1":"101912136 - CUNNINGHAM EL","2":"86","3":"101","4":"Open"},{"1":"101912137 - DE CHAUMES EL","2":"59","3":"47","4":"Open"},{"1":"101912138 - DE ZAVALA EL","2":"21","3":"49","4":"Open"},{"1":"101912140 - DOGAN EL","2":"87","3":"52","4":"Open"},{"1":"101912144 - DURKEE EL","2":"64","3":"51","4":"Open"},{"1":"101912147 - ELIOT EL","2":"80","3":"94","4":"Open"},{"1":"101912148 - ELROD EL","2":"63","3":"33","4":"Open"},{"1":"101912149 - EMERSON EL","2":"62","3":"51","4":"Open"},{"1":"101912151 - BELL EL","2":"70","3":"67","4":"Open"},{"1":"101912152 - FIELD EL","2":"74","3":"59","4":"Open"},{"1":"101912153 - FONDREN EL","2":"72","3":"61","4":"Open"},{"1":"101912154 - FOSTER EL","2":"30","3":"21","4":"Open"},{"1":"101912155 - FRANKLIN EL","2":"42","3":"NA","4":"Closed"},{"1":"101912156 - FROST EL","2":"67","3":"54","4":"Open"},{"1":"101912157 - GARDEN OAKS MONTESSORI","2":"157","3":"180","4":"Open"},{"1":"101912158 - GARDEN VILLAS EL","2":"42","3":"75","4":"Open"},{"1":"101912159 - GOLFCREST EL","2":"49","3":"30","4":"Open"},{"1":"101912162 - GREGG EL","2":"39","3":"36","4":"Open"},{"1":"101912163 - SUGAR GROVE ACADEMY","2":"76","3":"46","4":"Open"},{"1":"101912166 - HARRIS J R EL","2":"54","3":"39","4":"Open"},{"1":"101912167 - HARRIS R P EL","2":"21","3":"18","4":"Open"},{"1":"101912168 - HARTSFIELD EL","2":"49","3":"22","4":"Open"},{"1":"101912169 - HARVARD EL","2":"92","3":"100","4":"Open"},{"1":"101912170 - HELMS EL","2":"69","3":"65","4":"Open"},{"1":"101912171 - HENDERSON J EL","2":"40","3":"56","4":"Open"},{"1":"101912172 - HENDERSON N EL","2":"32","3":"NA","4":"Closed"},{"1":"101912173 - HEROD EL","2":"81","3":"67","4":"Open"},{"1":"101912174 - HIGHLAND HTS EL","2":"64","3":"60","4":"Open"},{"1":"101912175 - HOBBY EL","2":"57","3":"51","4":"Open"},{"1":"101912178 - HORN EL","2":"94","3":"71","4":"Open"},{"1":"101912179 - MCGOWEN EL","2":"80","3":"39","4":"Open"},{"1":"101912180 - ISAACS EL","2":"35","3":"29","4":"Open"},{"1":"101912181 - JANOWSKI EL","2":"65","3":"65","4":"Open"},{"1":"101912182 - JEFFERSON EL","2":"58","3":"46","4":"Open"},{"1":"101912185 - KASHMERE GARDENS EL","2":"43","3":"28","4":"Open"},{"1":"101912186 - ROBINSON EL","2":"31","3":"48","4":"Open"},{"1":"101912187 - KELSO EL","2":"30","3":"22","4":"Open"},{"1":"101912188 - KENNEDY EL","2":"58","3":"53","4":"Open"},{"1":"101912189 - KOLTER EL","2":"146","3":"113","4":"Open"},{"1":"101912192 - LANTRIP EL","2":"59","3":"43","4":"Open"},{"1":"101912194 - LEWIS EL","2":"82","3":"43","4":"Open"},{"1":"101912195 - LOCKHART EL","2":"50","3":"46","4":"Open"},{"1":"101912196 - LONGFELLOW EL","2":"96","3":"105","4":"Open"},{"1":"101912197 - LOOSCAN EL","2":"22","3":"12","4":"Open"},{"1":"101912198 - LOVE EL","2":"42","3":"32","4":"Open"},{"1":"101912199 - LOVETT EL","2":"110","3":"78","4":"Open"},{"1":"101912201 - MACGREGOR EL","2":"63","3":"32","4":"Open"},{"1":"101912203 - MADING EL","2":"41","3":"66","4":"Open"},{"1":"101912204 - MEMORIAL EL","2":"73","3":"55","4":"Open"},{"1":"101912207 - MONTGOMERY EL","2":"59","3":"46","4":"Open"},{"1":"101912209 - NEFF ECC","2":"51","3":"53","4":"Open"},{"1":"101912210 - NORTHLINE EL","2":"41","3":"44","4":"Open"},{"1":"101912211 - OAK FOREST EL","2":"75","3":"83","4":"Open"},{"1":"101912212 - OATES EL","2":"31","3":"39","4":"Open"},{"1":"101912213 - OSBORNE EL","2":"34","3":"55","4":"Open"},{"1":"101912214 - PARK PLACE EL","2":"81","3":"73","4":"Open"},{"1":"101912215 - PARKER EL","2":"134","3":"120","4":"Open"},{"1":"101912216 - PATTERSON EL","2":"104","3":"120","4":"Open"},{"1":"101912217 - PECK EL","2":"63","3":"62","4":"Open"},{"1":"101912218 - PILGRIM ACADEMY","2":"105","3":"133","4":"Open"},{"1":"101912219 - PINEY POINT EL","2":"62","3":"26","4":"Open"},{"1":"101912220 - PLEASANTVILLE EL","2":"28","3":"68","4":"Open"},{"1":"101912221 - POE EL","2":"91","3":"76","4":"Open"},{"1":"101912222 - PORT HOUSTON EL","2":"33","3":"NA","4":"Closed"},{"1":"101912223 - PUGH EL","2":"41","3":"22","4":"Open"},{"1":"101912224 - RED EL","2":"111","3":"88","4":"Open"},{"1":"101912225 - REYNOLDS EL","2":"58","3":"48","4":"Open"},{"1":"101912227 - MCNAMARA EL","2":"50","3":"52","4":"Open"},{"1":"101912228 - RIVER OAKS EL","2":"66","3":"69","4":"Open"},{"1":"101912229 - ROBERTS EL","2":"75","3":"60","4":"Open"},{"1":"101912231 - ROOSEVELT EL","2":"45","3":"82","4":"Open"},{"1":"101912232 - ROSS EL","2":"36","3":"NA","4":"Closed"},{"1":"101912233 - RUCKER EL","2":"79","3":"60","4":"Open"},{"1":"101912234 - BAYLOR COLLEGE OF MEDICINE BIOTECH ACADEMY AT RUSK","2":"39","3":"49","4":"Open"},{"1":"101912237 - SCARBOROUGH EL","2":"78","3":"61","4":"Open"},{"1":"101912239 - SHEARN EL","2":"69","3":"67","4":"Open"},{"1":"101912240 - SHERMAN EL","2":"49","3":"88","4":"Open"},{"1":"101912241 - SINCLAIR EL","2":"103","3":"93","4":"Open"},{"1":"101912242 - SMITH EL","2":"69","3":"71","4":"Open"},{"1":"101912243 - THOMPSON EL","2":"55","3":"85","4":"Open"},{"1":"101912244 - SOUTHMAYD EL","2":"73","3":"119","4":"Open"},{"1":"101912245 - STEVENS EL","2":"77","3":"65","4":"Open"},{"1":"101912247 - YOUNG EL","2":"54","3":"22","4":"Open"},{"1":"101912248 - SUTTON EL","2":"102","3":"130","4":"Open"},{"1":"101912249 - TRAVIS EL","2":"102","3":"120","4":"Open"},{"1":"101912251 - TWAIN EL","2":"88","3":"84","4":"Open"},{"1":"101912252 - WAINWRIGHT EL","2":"45","3":"66","4":"Open"},{"1":"101912253 - WALNUT BEND EL","2":"86","3":"51","4":"Open"},{"1":"101912254 - WESLEY EL","2":"38","3":"45","4":"Open"},{"1":"101912255 - WEST UNIVERSITY EL","2":"126","3":"159","4":"Open"},{"1":"101912256 - WHARTON K-8 DUAL LANGUAGE ACADEMY","2":"67","3":"99","4":"Open"},{"1":"101912257 - WHIDBY EL","2":"44","3":"30","4":"Open"},{"1":"101912258 - WHITTIER EL","2":"53","3":"23","4":"Open"},{"1":"101912259 - ELLA J BAKER MONTESSORI SCHOOL","2":"128","3":"139","4":"Open"},{"1":"101912260 - WINDSOR VILLAGE EL","2":"54","3":"42","4":"Open"},{"1":"101912262 - GRISSOM EL","2":"45","3":"26","4":"Open"},{"1":"101912263 - LAW EL","2":"54","3":"13","4":"Open"},{"1":"101912264 - MITCHELL EL","2":"65","3":"74","4":"Open"},{"1":"101912265 - PETERSEN EL","2":"63","3":"21","4":"Open"},{"1":"101912267 - WHITE E EL","2":"53","3":"17","4":"Open"},{"1":"101912268 - BENBROOK EL","2":"27","3":"19","4":"Open"},{"1":"101912269 - SCROGGINS EL","2":"40","3":"24","4":"Open"},{"1":"101912271 - FOERSTER EL","2":"67","3":"21","4":"Open"},{"1":"101912273 - ASHFORD EL","2":"61","3":"47","4":"Open"},{"1":"101912274 - ASKEW EL","2":"91","3":"68","4":"Open"},{"1":"101912275 - BUSH EL","2":"72","3":"67","4":"Open"},{"1":"101912276 - SHADOWBRIAR EL","2":"66","3":"85","4":"Open"},{"1":"101912279 - TIJERINA EL","2":"59","3":"33","4":"Open"},{"1":"101912281 - SANCHEZ EL","2":"60","3":"71","4":"Open"},{"1":"101912283 - GARCIA EL","2":"45","3":"36","4":"Open"},{"1":"101912285 - VALLEY WEST EL","2":"75","3":"121","4":"Open"},{"1":"101912286 - HERRERA EL","2":"101","3":"63","4":"Open"},{"1":"101912287 - CAGE EL","2":"60","3":"36","4":"Open"},{"1":"101912289 - MARTINEZ C EL","2":"25","3":"59","4":"Open"},{"1":"101912290 - CRESPO EL","2":"61","3":"65","4":"Open"},{"1":"101912291 - GALLEGOS EL","2":"49","3":"115","4":"Open"},{"1":"101912292 - CARRILLO EL","2":"44","3":"47","4":"Open"},{"1":"101912295 - BENAVIDEZ EL","2":"49","3":"60","4":"Open"},{"1":"101912297 - DAVILA EL","2":"75","3":"72","4":"Open"},{"1":"101912298 - MARTINEZ R EL","2":"60","3":"43","4":"Open"},{"1":"101912299 - MILNE EL","2":"48","3":"28","4":"Open"},{"1":"101912301 - EASTWOOD ACADEMY","2":"26","3":"34","4":"Open"},{"1":"101912308 - NORTH HOUSTON EARLY COLLEGE H S","2":"13","3":"14","4":"Open"},{"1":"101912310 - HOUSTON MATH SCIENCE AND TECHNOLOGY CENTER","2":"264","3":"282","4":"Open"},{"1":"101912320 - HARRIS CO J J A E P","2":"<10","3":"<10","4":"Open"},{"1":"101912321 - ENERGIZED FOR STEM ACADEMY H S","2":"18","3":"25","4":"Open"},{"1":"101912322 - CARNEGIE VANGUARD H S","2":"10","3":"15","4":"Open"},{"1":"101912323 - CHALLENGE EARLY COLLEGE H S","2":"17","3":"19","4":"Open"},{"1":"101912324 - LIBERTY H S","2":"<10","3":"<10","4":"Open"},{"1":"101912337 - PIN OAK MIDDLE","2":"150","3":"183","4":"Open"},{"1":"101912338 - ORTIZ MIDDLE","2":"84","3":"94","4":"Open"},{"1":"101912342 - ENERGIZED FOR EXCELLENCE ACADEMY INC MIDDLE","2":"28","3":"26","4":"Open"},{"1":"101912344 - BRIARMEADOW CHARTER","2":"88","3":"64","4":"Open"},{"1":"101912345 - EAST EARLY COLLEGE H S","2":"14","3":"23","4":"Open"},{"1":"101912348 - HOUSTON ACADEMY FOR INTERNATIONAL STUDIES","2":"20","3":"22","4":"Open"},{"1":"101912350 - ENERGIZED FOR EXCELLENCE ACADEMY ECC","2":"<10","3":"<10","4":"Open"},{"1":"101912351 - HARPER DAEP","2":"17","3":"NA","4":"Closed"},{"1":"101912352 - FARIAS EARLY CHILDHOOD CENTER","2":"26","3":"34","4":"Open"},{"1":"101912353 - SCHOOL AT ST GEORGE PLACE","2":"86","3":"58","4":"Open"},{"1":"101912354 - MISTRAL CENTER FOR EARLY CHILDHOOD","2":"<10","3":"34","4":"Open"},{"1":"101912355 - KING EARLY CHILDHOOD CTR","2":"19","3":"32","4":"Open"},{"1":"101912357 - LAURENZO EARLY CHILDHOOD CTR","2":"16","3":"37","4":"Open"},{"1":"101912358 - COOK JR EL","2":"50","3":"78","4":"Open"},{"1":"101912359 - MORENO EL","2":"75","3":"55","4":"Open"},{"1":"101912360 - BELLFORT EARLY CHILDHOOD CENTER","2":"18","3":"32","4":"Open"},{"1":"101912364 - ENERGIZED FOR EXCELLENCE ACADEMY EL","2":"31","3":"20","4":"Open"},{"1":"101912369 - GROSS EL","2":"47","3":"29","4":"Open"},{"1":"101912372 - RODRIGUEZ EL","2":"120","3":"147","4":"Open"},{"1":"101912373 - SEGUIN EL","2":"78","3":"46","4":"Open"},{"1":"101912374 - TINSLEY EL","2":"46","3":"29","4":"Open"},{"1":"101912380 - R D S P D","2":"30","3":"27","4":"Open"},{"1":"101912382 - REAGAN K-8 EDUCATIONAL CTR","2":"114","3":"101","4":"Open"},{"1":"101912383 - DEANDA EL","2":"126","3":"131","4":"Open"},{"1":"101912389 - KETELSEN EL","2":"63","3":"76","4":"Open"},{"1":"101912390 - ENERGIZED FOR STEM ACADEMY MIDDLE","2":"13","3":"13","4":"Open"},{"1":"101912394 - NEFF EL","2":"91","3":"74","4":"Open"},{"1":"101912395 - HINES-CALDWELL","2":"69","3":"80","4":"Open"},{"1":"101912396 - RAY DAILY EL","2":"92","3":"81","4":"Open"},{"1":"101912402 - SECONDARY DAEP","2":"18","3":"48","4":"Open"},{"1":"101912456 - H S AHEAD ACADEMY","2":"19","3":"16","4":"Open"},{"1":"101912458 - MICKEY LELAND COLLEGE PREP ACAD FOR YOUNG MEN","2":"36","3":"48","4":"Open"},{"1":"101912460 - MANDARIN IMMERSION MAGNET SCHOOL","2":"51","3":"41","4":"Open"},{"1":"101912463 - YOUNG WOMEN'S COLLEGE PREP ACADEMY","2":"15","3":"21","4":"Open"},{"1":"101912467 - BAYLOR COLLEGE OF MEDICINE ACADEMY AT RYAN","2":"38","3":"43","4":"Open"},{"1":"101912468 - ENERGY INSTITUTE H S","2":"88","3":"82","4":"Open"},{"1":"101912470 - FONWOOD EARLY CHILDHOOD CTR","2":"30","3":"29","4":"Open"},{"1":"101912473 - HILLIARD EL","2":"82","3":"45","4":"Open"},{"1":"101912475 - ELMORE EL","2":"67","3":"54","4":"Open"},{"1":"101912476 - FOREST BROOK MIDDLE","2":"104","3":"143","4":"Open"},{"1":"101912477 - NORTH FOREST H S","2":"103","3":"127","4":"Open"},{"1":"101912478 - ARABIC IMMERSION MAGNET SCHOOL","2":"42","3":"35","4":"Open"},{"1":"101912479 - SHADYDALE EL","2":"103","3":"82","4":"Open"},{"1":"101912480 - MARSHALL EL","2":"67","3":"84","4":"Open"},{"1":"101912483 - MARK WHITE EL","2":"82","3":"37","4":"Open"},{"1":"101912484 - MIDDLE COLLEGE H S AT HCC GULFTON","2":"<10","3":"NA","4":"Closed"},{"1":"101912485 - MIDDLE COLLEGE H S AT HCC FRAGA","2":"14","3":"10","4":"Open"},{"1":"101912486 - SOUTH EARLY COLLEGE H S","2":"21","3":"21","4":"Open"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="creating-new-columns-to-handle-10-schools" class="level2">
+<h2 class="anchored" data-anchor-id="creating-new-columns-to-handle-10-schools">Creating new columns to handle &lt;10 Schools</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>enrollment_number_10 <span class="ot">&lt;-</span> shutdown_enrollment_numbers <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">x2025_2026 =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>      x25_26 <span class="sc">&lt;</span> <span class="dv">10</span> <span class="sc">~</span> <span class="cn">NA</span>,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">is.na</span>(x25_26) <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">.default =</span> <span class="fu">as.numeric</span>(x25_26)),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">x2026_2027 =</span> <span class="fu">case_when</span>(</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>      x26_27 <span class="sc">&lt;</span> <span class="dv">10</span> <span class="sc">~</span> <span class="cn">NA</span>,</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">is.na</span>(x26_27) <span class="sc">~</span> <span class="dv">0</span>,</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">.default =</span> <span class="fu">as.numeric</span>(x26_27),</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There were 2 warnings in `mutate()`.
+The first warning was:
+ℹ In argument: `x2025_2026 = case_when(x25_26 &lt; 10 ~ NA, is.na(x25_26) ~ 0,
+  .default = as.numeric(x25_26))`.
+Caused by warning in `vec_case_when()`:
+! NAs introduced by coercion
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>enrollment_number_10</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["campus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["x25_26"],"name":[2],"type":["chr"],"align":["left"]},{"label":["x26_27"],"name":[3],"type":["chr"],"align":["left"]},{"label":["school_active"],"name":[4],"type":["chr"],"align":["left"]},{"label":["x2025_2026"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["x2026_2027"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"101912001 - AUSTIN H S","2":"145","3":"125","4":"Open","5":"145","6":"125"},{"1":"101912002 - BELLAIRE H S","2":"252","3":"246","4":"Open","5":"252","6":"246"},{"1":"101912003 - NORTHSIDE H S","2":"136","3":"97","4":"Open","5":"136","6":"97"},{"1":"101912004 - FURR H S","2":"109","3":"106","4":"Open","5":"109","6":"106"},{"1":"101912006 - JONES FUTURES ACADEMY","2":"52","3":"29","4":"Open","5":"52","6":"29"},{"1":"101912007 - KASHMERE H S","2":"107","3":"74","4":"Open","5":"107","6":"74"},{"1":"101912008 - LAMAR H S","2":"233","3":"228","4":"Open","5":"233","6":"228"},{"1":"101912009 - WISDOM H S","2":"112","3":"126","4":"Open","5":"112","6":"126"},{"1":"101912010 - MADISON H S","2":"208","3":"207","4":"Open","5":"208","6":"207"},{"1":"101912011 - MILBY H S","2":"252","3":"181","4":"Open","5":"252","6":"181"},{"1":"101912012 - HEIGHTS H S","2":"250","3":"260","4":"Open","5":"250","6":"260"},{"1":"101912013 - COMMUNITY SERVICES-SEC","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912014 - STERLING H S","2":"166","3":"188","4":"Open","5":"166","6":"188"},{"1":"101912015 - WALTRIP H S","2":"215","3":"255","4":"Open","5":"215","6":"255"},{"1":"101912016 - WASHINGTON B T H S","2":"116","3":"96","4":"Open","5":"116","6":"96"},{"1":"101912017 - WESTBURY H S","2":"196","3":"204","4":"Open","5":"196","6":"204"},{"1":"101912018 - WHEATLEY H S","2":"101","3":"115","4":"Open","5":"101","6":"115"},{"1":"101912019 - WORTHING H S","2":"124","3":"99","4":"Open","5":"124","6":"99"},{"1":"101912020 - YATES H S","2":"137","3":"155","4":"Open","5":"137","6":"155"},{"1":"101912023 - SHARPSTOWN H S","2":"134","3":"114","4":"Open","5":"134","6":"114"},{"1":"101912024 - SCARBOROUGH H S","2":"68","3":"44","4":"Open","5":"68","6":"44"},{"1":"101912025 - KINDER H S FOR PERFORMING AND VISUAL ARTS","2":"20","3":"23","4":"Open","5":"20","6":"23"},{"1":"101912026 - DEBAKEY H S FOR HEALTH PROF","2":"19","3":"17","4":"Open","5":"19","6":"17"},{"1":"101912027 - CHAVEZ H S","2":"211","3":"182","4":"Open","5":"211","6":"182"},{"1":"101912034 - H S FOR LAW AND JUSTICE","2":"20","3":"17","4":"Open","5":"20","6":"17"},{"1":"101912036 - WESTSIDE H S","2":"214","3":"168","4":"Open","5":"214","6":"168"},{"1":"101912039 - T H ROGERS SCHOOL","2":"64","3":"40","4":"Open","5":"64","6":"40"},{"1":"101912041 - ATTUCKS MIDDLE","2":"82","3":"111","4":"Open","5":"82","6":"111"},{"1":"101912042 - BLACK MIDDLE","2":"162","3":"210","4":"Open","5":"162","6":"210"},{"1":"101912043 - BURBANK MIDDLE","2":"158","3":"177","4":"Open","5":"158","6":"177"},{"1":"101912044 - CULLEN MIDDLE","2":"85","3":"113","4":"Open","5":"85","6":"113"},{"1":"101912045 - DEADY MIDDLE","2":"82","3":"64","4":"Open","5":"82","6":"64"},{"1":"101912046 - EDISON MIDDLE","2":"84","3":"114","4":"Open","5":"84","6":"114"},{"1":"101912047 - FONVILLE MIDDLE","2":"84","3":"97","4":"Open","5":"84","6":"97"},{"1":"101912048 - CLIFTON MIDDLE","2":"45","3":"26","4":"Open","5":"45","6":"26"},{"1":"101912049 - HAMILTON MIDDLE","2":"152","3":"158","4":"Open","5":"152","6":"158"},{"1":"101912050 - HOLLAND MIDDLE","2":"74","3":"90","4":"Open","5":"74","6":"90"},{"1":"101912051 - HARTMAN MIDDLE","2":"105","3":"170","4":"Open","5":"105","6":"170"},{"1":"101912052 - HENRY MIDDLE","2":"92","3":"56","4":"Open","5":"92","6":"56"},{"1":"101912053 - HOGG MIDDLE","2":"163","3":"179","4":"Open","5":"163","6":"179"},{"1":"101912054 - NAVARRO MIDDLE","2":"60","3":"62","4":"Open","5":"60","6":"62"},{"1":"101912055 - MEYERLAND MIDDLE","2":"185","3":"181","4":"Open","5":"185","6":"181"},{"1":"101912056 - WELCH MIDDLE","2":"71","3":"102","4":"Open","5":"71","6":"102"},{"1":"101912057 - LANIER MIDDLE","2":"111","3":"108","4":"Open","5":"111","6":"108"},{"1":"101912058 - GREGORY-LINCOLN ED CTR","2":"66","3":"108","4":"Open","5":"66","6":"108"},{"1":"101912059 - LONG ACADEMY","2":"64","3":"43","4":"Open","5":"64","6":"43"},{"1":"101912060 - REVERE MIDDLE","2":"86","3":"122","4":"Open","5":"86","6":"122"},{"1":"101912061 - MARSHALL MIDDLE","2":"65","3":"83","4":"Open","5":"65","6":"83"},{"1":"101912062 - FLEMING MCREYNOLDS MIDDLE","2":"75","3":"77","4":"Open","5":"75","6":"77"},{"1":"101912064 - PERSHING MIDDLE","2":"165","3":"163","4":"Open","5":"165","6":"163"},{"1":"101912068 - TANGLEWOOD MIDDLE","2":"110","3":"163","4":"Open","5":"110","6":"163"},{"1":"101912069 - SOAR CENTER","2":"267","3":"39","4":"Open","5":"267","6":"39"},{"1":"101912071 - PROJECT CHRYSALIS MIDDLE","2":"22","3":"26","4":"Open","5":"22","6":"26"},{"1":"101912072 - FONDREN MIDDLE","2":"69","3":"104","4":"Open","5":"69","6":"104"},{"1":"101912075 - LAWSON MIDDLE","2":"162","3":"114","4":"Open","5":"162","6":"114"},{"1":"101912077 - THOMAS MIDDLE","2":"106","3":"49","4":"Open","5":"106","6":"49"},{"1":"101912078 - FLEMING MIDDLE","2":"68","3":"NA","4":"Closed","5":"68","6":"0"},{"1":"101912079 - KEY MIDDLE","2":"91","3":"69","4":"Open","5":"91","6":"69"},{"1":"101912080 - RICE SCH /LA ESCUELA RICE","2":"146","3":"145","4":"Open","5":"146","6":"145"},{"1":"101912081 - SHARPSTOWN INTERNATIONAL SCHOOL","2":"108","3":"97","4":"Open","5":"108","6":"97"},{"1":"101912082 - WILLIAMS MIDDLE","2":"66","3":"36","4":"Open","5":"66","6":"36"},{"1":"101912097 - HCC LIFE SKILLS PROGRAM","2":"61","3":"66","4":"Open","5":"61","6":"66"},{"1":"101912098 - STEVENSON MIDDLE","2":"148","3":"117","4":"Open","5":"148","6":"117"},{"1":"101912099 - WEST BRIAR MIDDLE","2":"105","3":"97","4":"Open","5":"105","6":"97"},{"1":"101912100 - TEXAS CONNECTIONS ACADEMY AT HOUSTON","2":"1315","3":"1088","4":"Open","5":"1315","6":"1088"},{"1":"101912102 - ALCOTT EL","2":"43","3":"NA","4":"Closed","5":"43","6":"0"},{"1":"101912104 - ALMEDA EL","2":"102","3":"114","4":"Open","5":"102","6":"114"},{"1":"101912105 - ANDERSON EL","2":"48","3":"84","4":"Open","5":"48","6":"84"},{"1":"101912106 - ATHERTON EL","2":"58","3":"54","4":"Open","5":"58","6":"54"},{"1":"101912107 - BARRICK EL","2":"28","3":"11","4":"Open","5":"28","6":"11"},{"1":"101912108 - BASTIAN EL","2":"74","3":"76","4":"Open","5":"74","6":"76"},{"1":"101912109 - BERRY EL","2":"76","3":"85","4":"Open","5":"76","6":"85"},{"1":"101912110 - BLACKSHEAR EL","2":"33","3":"10","4":"Open","5":"33","6":"10"},{"1":"101912111 - BONHAM EL","2":"80","3":"76","4":"Open","5":"80","6":"76"},{"1":"101912112 - BONNER EL","2":"79","3":"116","4":"Open","5":"79","6":"116"},{"1":"101912113 - RODERICK R PAIGE EL","2":"64","3":"58","4":"Open","5":"64","6":"58"},{"1":"101912114 - BRAEBURN EL","2":"117","3":"105","4":"Open","5":"117","6":"105"},{"1":"101912115 - DURHAM EL","2":"57","3":"43","4":"Open","5":"57","6":"43"},{"1":"101912116 - BRIARGROVE EL","2":"117","3":"96","4":"Open","5":"117","6":"96"},{"1":"101912117 - BRISCOE EL","2":"50","3":"NA","4":"Closed","5":"50","6":"0"},{"1":"101912119 - BROOKLINE EL","2":"50","3":"27","4":"Open","5":"50","6":"27"},{"1":"101912120 - BROWNING EL","2":"44","3":"37","4":"Open","5":"44","6":"37"},{"1":"101912121 - BRUCE EL","2":"49","3":"34","4":"Open","5":"49","6":"34"},{"1":"101912122 - BURBANK EL","2":"111","3":"75","4":"Open","5":"111","6":"75"},{"1":"101912123 - CODWELL EL","2":"53","3":"54","4":"Open","5":"53","6":"54"},{"1":"101912124 - BURNET EL","2":"45","3":"33","4":"Open","5":"45","6":"33"},{"1":"101912125 - BURRUS EL","2":"25","3":"NA","4":"Closed","5":"25","6":"0"},{"1":"101912127 - WOODSON SCHOOL","2":"62","3":"92","4":"Open","5":"62","6":"92"},{"1":"101912128 - LYONS EL","2":"69","3":"98","4":"Open","5":"69","6":"98"},{"1":"101912130 - CONDIT EL","2":"138","3":"112","4":"Open","5":"138","6":"112"},{"1":"101912131 - HALPIN EARLY CHILDHOOD CTR","2":"38","3":"39","4":"Open","5":"38","6":"39"},{"1":"101912132 - COOP EL","2":"55","3":"58","4":"Open","5":"55","6":"58"},{"1":"101912133 - CORNELIUS EL","2":"78","3":"62","4":"Open","5":"78","6":"62"},{"1":"101912135 - CROCKETT EL","2":"64","3":"55","4":"Open","5":"64","6":"55"},{"1":"101912136 - CUNNINGHAM EL","2":"86","3":"101","4":"Open","5":"86","6":"101"},{"1":"101912137 - DE CHAUMES EL","2":"59","3":"47","4":"Open","5":"59","6":"47"},{"1":"101912138 - DE ZAVALA EL","2":"21","3":"49","4":"Open","5":"21","6":"49"},{"1":"101912140 - DOGAN EL","2":"87","3":"52","4":"Open","5":"87","6":"52"},{"1":"101912144 - DURKEE EL","2":"64","3":"51","4":"Open","5":"64","6":"51"},{"1":"101912147 - ELIOT EL","2":"80","3":"94","4":"Open","5":"80","6":"94"},{"1":"101912148 - ELROD EL","2":"63","3":"33","4":"Open","5":"63","6":"33"},{"1":"101912149 - EMERSON EL","2":"62","3":"51","4":"Open","5":"62","6":"51"},{"1":"101912151 - BELL EL","2":"70","3":"67","4":"Open","5":"70","6":"67"},{"1":"101912152 - FIELD EL","2":"74","3":"59","4":"Open","5":"74","6":"59"},{"1":"101912153 - FONDREN EL","2":"72","3":"61","4":"Open","5":"72","6":"61"},{"1":"101912154 - FOSTER EL","2":"30","3":"21","4":"Open","5":"30","6":"21"},{"1":"101912155 - FRANKLIN EL","2":"42","3":"NA","4":"Closed","5":"42","6":"0"},{"1":"101912156 - FROST EL","2":"67","3":"54","4":"Open","5":"67","6":"54"},{"1":"101912157 - GARDEN OAKS MONTESSORI","2":"157","3":"180","4":"Open","5":"157","6":"180"},{"1":"101912158 - GARDEN VILLAS EL","2":"42","3":"75","4":"Open","5":"42","6":"75"},{"1":"101912159 - GOLFCREST EL","2":"49","3":"30","4":"Open","5":"49","6":"30"},{"1":"101912162 - GREGG EL","2":"39","3":"36","4":"Open","5":"39","6":"36"},{"1":"101912163 - SUGAR GROVE ACADEMY","2":"76","3":"46","4":"Open","5":"76","6":"46"},{"1":"101912166 - HARRIS J R EL","2":"54","3":"39","4":"Open","5":"54","6":"39"},{"1":"101912167 - HARRIS R P EL","2":"21","3":"18","4":"Open","5":"21","6":"18"},{"1":"101912168 - HARTSFIELD EL","2":"49","3":"22","4":"Open","5":"49","6":"22"},{"1":"101912169 - HARVARD EL","2":"92","3":"100","4":"Open","5":"92","6":"100"},{"1":"101912170 - HELMS EL","2":"69","3":"65","4":"Open","5":"69","6":"65"},{"1":"101912171 - HENDERSON J EL","2":"40","3":"56","4":"Open","5":"40","6":"56"},{"1":"101912172 - HENDERSON N EL","2":"32","3":"NA","4":"Closed","5":"32","6":"0"},{"1":"101912173 - HEROD EL","2":"81","3":"67","4":"Open","5":"81","6":"67"},{"1":"101912174 - HIGHLAND HTS EL","2":"64","3":"60","4":"Open","5":"64","6":"60"},{"1":"101912175 - HOBBY EL","2":"57","3":"51","4":"Open","5":"57","6":"51"},{"1":"101912178 - HORN EL","2":"94","3":"71","4":"Open","5":"94","6":"71"},{"1":"101912179 - MCGOWEN EL","2":"80","3":"39","4":"Open","5":"80","6":"39"},{"1":"101912180 - ISAACS EL","2":"35","3":"29","4":"Open","5":"35","6":"29"},{"1":"101912181 - JANOWSKI EL","2":"65","3":"65","4":"Open","5":"65","6":"65"},{"1":"101912182 - JEFFERSON EL","2":"58","3":"46","4":"Open","5":"58","6":"46"},{"1":"101912185 - KASHMERE GARDENS EL","2":"43","3":"28","4":"Open","5":"43","6":"28"},{"1":"101912186 - ROBINSON EL","2":"31","3":"48","4":"Open","5":"31","6":"48"},{"1":"101912187 - KELSO EL","2":"30","3":"22","4":"Open","5":"30","6":"22"},{"1":"101912188 - KENNEDY EL","2":"58","3":"53","4":"Open","5":"58","6":"53"},{"1":"101912189 - KOLTER EL","2":"146","3":"113","4":"Open","5":"146","6":"113"},{"1":"101912192 - LANTRIP EL","2":"59","3":"43","4":"Open","5":"59","6":"43"},{"1":"101912194 - LEWIS EL","2":"82","3":"43","4":"Open","5":"82","6":"43"},{"1":"101912195 - LOCKHART EL","2":"50","3":"46","4":"Open","5":"50","6":"46"},{"1":"101912196 - LONGFELLOW EL","2":"96","3":"105","4":"Open","5":"96","6":"105"},{"1":"101912197 - LOOSCAN EL","2":"22","3":"12","4":"Open","5":"22","6":"12"},{"1":"101912198 - LOVE EL","2":"42","3":"32","4":"Open","5":"42","6":"32"},{"1":"101912199 - LOVETT EL","2":"110","3":"78","4":"Open","5":"110","6":"78"},{"1":"101912201 - MACGREGOR EL","2":"63","3":"32","4":"Open","5":"63","6":"32"},{"1":"101912203 - MADING EL","2":"41","3":"66","4":"Open","5":"41","6":"66"},{"1":"101912204 - MEMORIAL EL","2":"73","3":"55","4":"Open","5":"73","6":"55"},{"1":"101912207 - MONTGOMERY EL","2":"59","3":"46","4":"Open","5":"59","6":"46"},{"1":"101912209 - NEFF ECC","2":"51","3":"53","4":"Open","5":"51","6":"53"},{"1":"101912210 - NORTHLINE EL","2":"41","3":"44","4":"Open","5":"41","6":"44"},{"1":"101912211 - OAK FOREST EL","2":"75","3":"83","4":"Open","5":"75","6":"83"},{"1":"101912212 - OATES EL","2":"31","3":"39","4":"Open","5":"31","6":"39"},{"1":"101912213 - OSBORNE EL","2":"34","3":"55","4":"Open","5":"34","6":"55"},{"1":"101912214 - PARK PLACE EL","2":"81","3":"73","4":"Open","5":"81","6":"73"},{"1":"101912215 - PARKER EL","2":"134","3":"120","4":"Open","5":"134","6":"120"},{"1":"101912216 - PATTERSON EL","2":"104","3":"120","4":"Open","5":"104","6":"120"},{"1":"101912217 - PECK EL","2":"63","3":"62","4":"Open","5":"63","6":"62"},{"1":"101912218 - PILGRIM ACADEMY","2":"105","3":"133","4":"Open","5":"105","6":"133"},{"1":"101912219 - PINEY POINT EL","2":"62","3":"26","4":"Open","5":"62","6":"26"},{"1":"101912220 - PLEASANTVILLE EL","2":"28","3":"68","4":"Open","5":"28","6":"68"},{"1":"101912221 - POE EL","2":"91","3":"76","4":"Open","5":"91","6":"76"},{"1":"101912222 - PORT HOUSTON EL","2":"33","3":"NA","4":"Closed","5":"33","6":"0"},{"1":"101912223 - PUGH EL","2":"41","3":"22","4":"Open","5":"41","6":"22"},{"1":"101912224 - RED EL","2":"111","3":"88","4":"Open","5":"111","6":"88"},{"1":"101912225 - REYNOLDS EL","2":"58","3":"48","4":"Open","5":"58","6":"48"},{"1":"101912227 - MCNAMARA EL","2":"50","3":"52","4":"Open","5":"50","6":"52"},{"1":"101912228 - RIVER OAKS EL","2":"66","3":"69","4":"Open","5":"66","6":"69"},{"1":"101912229 - ROBERTS EL","2":"75","3":"60","4":"Open","5":"75","6":"60"},{"1":"101912231 - ROOSEVELT EL","2":"45","3":"82","4":"Open","5":"45","6":"82"},{"1":"101912232 - ROSS EL","2":"36","3":"NA","4":"Closed","5":"36","6":"0"},{"1":"101912233 - RUCKER EL","2":"79","3":"60","4":"Open","5":"79","6":"60"},{"1":"101912234 - BAYLOR COLLEGE OF MEDICINE BIOTECH ACADEMY AT RUSK","2":"39","3":"49","4":"Open","5":"39","6":"49"},{"1":"101912237 - SCARBOROUGH EL","2":"78","3":"61","4":"Open","5":"78","6":"61"},{"1":"101912239 - SHEARN EL","2":"69","3":"67","4":"Open","5":"69","6":"67"},{"1":"101912240 - SHERMAN EL","2":"49","3":"88","4":"Open","5":"49","6":"88"},{"1":"101912241 - SINCLAIR EL","2":"103","3":"93","4":"Open","5":"103","6":"93"},{"1":"101912242 - SMITH EL","2":"69","3":"71","4":"Open","5":"69","6":"71"},{"1":"101912243 - THOMPSON EL","2":"55","3":"85","4":"Open","5":"55","6":"85"},{"1":"101912244 - SOUTHMAYD EL","2":"73","3":"119","4":"Open","5":"73","6":"119"},{"1":"101912245 - STEVENS EL","2":"77","3":"65","4":"Open","5":"77","6":"65"},{"1":"101912247 - YOUNG EL","2":"54","3":"22","4":"Open","5":"54","6":"22"},{"1":"101912248 - SUTTON EL","2":"102","3":"130","4":"Open","5":"102","6":"130"},{"1":"101912249 - TRAVIS EL","2":"102","3":"120","4":"Open","5":"102","6":"120"},{"1":"101912251 - TWAIN EL","2":"88","3":"84","4":"Open","5":"88","6":"84"},{"1":"101912252 - WAINWRIGHT EL","2":"45","3":"66","4":"Open","5":"45","6":"66"},{"1":"101912253 - WALNUT BEND EL","2":"86","3":"51","4":"Open","5":"86","6":"51"},{"1":"101912254 - WESLEY EL","2":"38","3":"45","4":"Open","5":"38","6":"45"},{"1":"101912255 - WEST UNIVERSITY EL","2":"126","3":"159","4":"Open","5":"126","6":"159"},{"1":"101912256 - WHARTON K-8 DUAL LANGUAGE ACADEMY","2":"67","3":"99","4":"Open","5":"67","6":"99"},{"1":"101912257 - WHIDBY EL","2":"44","3":"30","4":"Open","5":"44","6":"30"},{"1":"101912258 - WHITTIER EL","2":"53","3":"23","4":"Open","5":"53","6":"23"},{"1":"101912259 - ELLA J BAKER MONTESSORI SCHOOL","2":"128","3":"139","4":"Open","5":"128","6":"139"},{"1":"101912260 - WINDSOR VILLAGE EL","2":"54","3":"42","4":"Open","5":"54","6":"42"},{"1":"101912262 - GRISSOM EL","2":"45","3":"26","4":"Open","5":"45","6":"26"},{"1":"101912263 - LAW EL","2":"54","3":"13","4":"Open","5":"54","6":"13"},{"1":"101912264 - MITCHELL EL","2":"65","3":"74","4":"Open","5":"65","6":"74"},{"1":"101912265 - PETERSEN EL","2":"63","3":"21","4":"Open","5":"63","6":"21"},{"1":"101912267 - WHITE E EL","2":"53","3":"17","4":"Open","5":"53","6":"17"},{"1":"101912268 - BENBROOK EL","2":"27","3":"19","4":"Open","5":"27","6":"19"},{"1":"101912269 - SCROGGINS EL","2":"40","3":"24","4":"Open","5":"40","6":"24"},{"1":"101912271 - FOERSTER EL","2":"67","3":"21","4":"Open","5":"67","6":"21"},{"1":"101912273 - ASHFORD EL","2":"61","3":"47","4":"Open","5":"61","6":"47"},{"1":"101912274 - ASKEW EL","2":"91","3":"68","4":"Open","5":"91","6":"68"},{"1":"101912275 - BUSH EL","2":"72","3":"67","4":"Open","5":"72","6":"67"},{"1":"101912276 - SHADOWBRIAR EL","2":"66","3":"85","4":"Open","5":"66","6":"85"},{"1":"101912279 - TIJERINA EL","2":"59","3":"33","4":"Open","5":"59","6":"33"},{"1":"101912281 - SANCHEZ EL","2":"60","3":"71","4":"Open","5":"60","6":"71"},{"1":"101912283 - GARCIA EL","2":"45","3":"36","4":"Open","5":"45","6":"36"},{"1":"101912285 - VALLEY WEST EL","2":"75","3":"121","4":"Open","5":"75","6":"121"},{"1":"101912286 - HERRERA EL","2":"101","3":"63","4":"Open","5":"101","6":"63"},{"1":"101912287 - CAGE EL","2":"60","3":"36","4":"Open","5":"60","6":"36"},{"1":"101912289 - MARTINEZ C EL","2":"25","3":"59","4":"Open","5":"25","6":"59"},{"1":"101912290 - CRESPO EL","2":"61","3":"65","4":"Open","5":"61","6":"65"},{"1":"101912291 - GALLEGOS EL","2":"49","3":"115","4":"Open","5":"49","6":"115"},{"1":"101912292 - CARRILLO EL","2":"44","3":"47","4":"Open","5":"44","6":"47"},{"1":"101912295 - BENAVIDEZ EL","2":"49","3":"60","4":"Open","5":"49","6":"60"},{"1":"101912297 - DAVILA EL","2":"75","3":"72","4":"Open","5":"75","6":"72"},{"1":"101912298 - MARTINEZ R EL","2":"60","3":"43","4":"Open","5":"60","6":"43"},{"1":"101912299 - MILNE EL","2":"48","3":"28","4":"Open","5":"48","6":"28"},{"1":"101912301 - EASTWOOD ACADEMY","2":"26","3":"34","4":"Open","5":"26","6":"34"},{"1":"101912308 - NORTH HOUSTON EARLY COLLEGE H S","2":"13","3":"14","4":"Open","5":"13","6":"14"},{"1":"101912310 - HOUSTON MATH SCIENCE AND TECHNOLOGY CENTER","2":"264","3":"282","4":"Open","5":"264","6":"282"},{"1":"101912320 - HARRIS CO J J A E P","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912321 - ENERGIZED FOR STEM ACADEMY H S","2":"18","3":"25","4":"Open","5":"18","6":"25"},{"1":"101912322 - CARNEGIE VANGUARD H S","2":"10","3":"15","4":"Open","5":"10","6":"15"},{"1":"101912323 - CHALLENGE EARLY COLLEGE H S","2":"17","3":"19","4":"Open","5":"17","6":"19"},{"1":"101912324 - LIBERTY H S","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912337 - PIN OAK MIDDLE","2":"150","3":"183","4":"Open","5":"150","6":"183"},{"1":"101912338 - ORTIZ MIDDLE","2":"84","3":"94","4":"Open","5":"84","6":"94"},{"1":"101912342 - ENERGIZED FOR EXCELLENCE ACADEMY INC MIDDLE","2":"28","3":"26","4":"Open","5":"28","6":"26"},{"1":"101912344 - BRIARMEADOW CHARTER","2":"88","3":"64","4":"Open","5":"88","6":"64"},{"1":"101912345 - EAST EARLY COLLEGE H S","2":"14","3":"23","4":"Open","5":"14","6":"23"},{"1":"101912348 - HOUSTON ACADEMY FOR INTERNATIONAL STUDIES","2":"20","3":"22","4":"Open","5":"20","6":"22"},{"1":"101912350 - ENERGIZED FOR EXCELLENCE ACADEMY ECC","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912351 - HARPER DAEP","2":"17","3":"NA","4":"Closed","5":"17","6":"0"},{"1":"101912352 - FARIAS EARLY CHILDHOOD CENTER","2":"26","3":"34","4":"Open","5":"26","6":"34"},{"1":"101912353 - SCHOOL AT ST GEORGE PLACE","2":"86","3":"58","4":"Open","5":"86","6":"58"},{"1":"101912354 - MISTRAL CENTER FOR EARLY CHILDHOOD","2":"<10","3":"34","4":"Open","5":"NA","6":"34"},{"1":"101912355 - KING EARLY CHILDHOOD CTR","2":"19","3":"32","4":"Open","5":"19","6":"32"},{"1":"101912357 - LAURENZO EARLY CHILDHOOD CTR","2":"16","3":"37","4":"Open","5":"16","6":"37"},{"1":"101912358 - COOK JR EL","2":"50","3":"78","4":"Open","5":"50","6":"78"},{"1":"101912359 - MORENO EL","2":"75","3":"55","4":"Open","5":"75","6":"55"},{"1":"101912360 - BELLFORT EARLY CHILDHOOD CENTER","2":"18","3":"32","4":"Open","5":"18","6":"32"},{"1":"101912364 - ENERGIZED FOR EXCELLENCE ACADEMY EL","2":"31","3":"20","4":"Open","5":"31","6":"20"},{"1":"101912369 - GROSS EL","2":"47","3":"29","4":"Open","5":"47","6":"29"},{"1":"101912372 - RODRIGUEZ EL","2":"120","3":"147","4":"Open","5":"120","6":"147"},{"1":"101912373 - SEGUIN EL","2":"78","3":"46","4":"Open","5":"78","6":"46"},{"1":"101912374 - TINSLEY EL","2":"46","3":"29","4":"Open","5":"46","6":"29"},{"1":"101912380 - R D S P D","2":"30","3":"27","4":"Open","5":"30","6":"27"},{"1":"101912382 - REAGAN K-8 EDUCATIONAL CTR","2":"114","3":"101","4":"Open","5":"114","6":"101"},{"1":"101912383 - DEANDA EL","2":"126","3":"131","4":"Open","5":"126","6":"131"},{"1":"101912389 - KETELSEN EL","2":"63","3":"76","4":"Open","5":"63","6":"76"},{"1":"101912390 - ENERGIZED FOR STEM ACADEMY MIDDLE","2":"13","3":"13","4":"Open","5":"13","6":"13"},{"1":"101912394 - NEFF EL","2":"91","3":"74","4":"Open","5":"91","6":"74"},{"1":"101912395 - HINES-CALDWELL","2":"69","3":"80","4":"Open","5":"69","6":"80"},{"1":"101912396 - RAY DAILY EL","2":"92","3":"81","4":"Open","5":"92","6":"81"},{"1":"101912402 - SECONDARY DAEP","2":"18","3":"48","4":"Open","5":"18","6":"48"},{"1":"101912456 - H S AHEAD ACADEMY","2":"19","3":"16","4":"Open","5":"19","6":"16"},{"1":"101912458 - MICKEY LELAND COLLEGE PREP ACAD FOR YOUNG MEN","2":"36","3":"48","4":"Open","5":"36","6":"48"},{"1":"101912460 - MANDARIN IMMERSION MAGNET SCHOOL","2":"51","3":"41","4":"Open","5":"51","6":"41"},{"1":"101912463 - YOUNG WOMEN'S COLLEGE PREP ACADEMY","2":"15","3":"21","4":"Open","5":"15","6":"21"},{"1":"101912467 - BAYLOR COLLEGE OF MEDICINE ACADEMY AT RYAN","2":"38","3":"43","4":"Open","5":"38","6":"43"},{"1":"101912468 - ENERGY INSTITUTE H S","2":"88","3":"82","4":"Open","5":"88","6":"82"},{"1":"101912470 - FONWOOD EARLY CHILDHOOD CTR","2":"30","3":"29","4":"Open","5":"30","6":"29"},{"1":"101912473 - HILLIARD EL","2":"82","3":"45","4":"Open","5":"82","6":"45"},{"1":"101912475 - ELMORE EL","2":"67","3":"54","4":"Open","5":"67","6":"54"},{"1":"101912476 - FOREST BROOK MIDDLE","2":"104","3":"143","4":"Open","5":"104","6":"143"},{"1":"101912477 - NORTH FOREST H S","2":"103","3":"127","4":"Open","5":"103","6":"127"},{"1":"101912478 - ARABIC IMMERSION MAGNET SCHOOL","2":"42","3":"35","4":"Open","5":"42","6":"35"},{"1":"101912479 - SHADYDALE EL","2":"103","3":"82","4":"Open","5":"103","6":"82"},{"1":"101912480 - MARSHALL EL","2":"67","3":"84","4":"Open","5":"67","6":"84"},{"1":"101912483 - MARK WHITE EL","2":"82","3":"37","4":"Open","5":"82","6":"37"},{"1":"101912484 - MIDDLE COLLEGE H S AT HCC GULFTON","2":"<10","3":"NA","4":"Closed","5":"NA","6":"0"},{"1":"101912485 - MIDDLE COLLEGE H S AT HCC FRAGA","2":"14","3":"10","4":"Open","5":"14","6":"10"},{"1":"101912486 - SOUTH EARLY COLLEGE H S","2":"21","3":"21","4":"Open","5":"21","6":"21"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="make-separate-section-for-na-rows" class="level2">
+<h2 class="anchored" data-anchor-id="make-separate-section-for-na-rows">Make Separate Section for NA Rows</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>na_rows_enrollment <span class="ot">&lt;-</span> enrollment_number_10 <span class="sc">|&gt;</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.na</span>(x2025_2026) <span class="sc">|</span> <span class="fu">is.na</span>(x2026_2027)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>na_rows_enrollment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["campus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["x25_26"],"name":[2],"type":["chr"],"align":["left"]},{"label":["x26_27"],"name":[3],"type":["chr"],"align":["left"]},{"label":["school_active"],"name":[4],"type":["chr"],"align":["left"]},{"label":["x2025_2026"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["x2026_2027"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"101912013 - COMMUNITY SERVICES-SEC","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912320 - HARRIS CO J J A E P","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912324 - LIBERTY H S","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912350 - ENERGIZED FOR EXCELLENCE ACADEMY ECC","2":"<10","3":"<10","4":"Open","5":"NA","6":"NA"},{"1":"101912354 - MISTRAL CENTER FOR EARLY CHILDHOOD","2":"<10","3":"34","4":"Open","5":"NA","6":"34"},{"1":"101912484 - MIDDLE COLLEGE H S AT HCC GULFTON","2":"<10","3":"NA","4":"Closed","5":"NA","6":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="remove-na-rows-and-remove-old-columns" class="level2">
+<h2 class="anchored" data-anchor-id="remove-na-rows-and-remove-old-columns">Remove NA Rows and Remove old columns</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>removal_enrollment <span class="ot">&lt;-</span> enrollment_number_10 <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(x2025_2026),</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(x2026_2027)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    campus,</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    school_active,</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    x2025_2026,</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    x2026_2027</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>removal_enrollment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["campus"],"name":[1],"type":["chr"],"align":["left"]},{"label":["school_active"],"name":[2],"type":["chr"],"align":["left"]},{"label":["x2025_2026"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["x2026_2027"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"101912001 - AUSTIN H S","2":"Open","3":"145","4":"125"},{"1":"101912002 - BELLAIRE H S","2":"Open","3":"252","4":"246"},{"1":"101912003 - NORTHSIDE H S","2":"Open","3":"136","4":"97"},{"1":"101912004 - FURR H S","2":"Open","3":"109","4":"106"},{"1":"101912006 - JONES FUTURES ACADEMY","2":"Open","3":"52","4":"29"},{"1":"101912007 - KASHMERE H S","2":"Open","3":"107","4":"74"},{"1":"101912008 - LAMAR H S","2":"Open","3":"233","4":"228"},{"1":"101912009 - WISDOM H S","2":"Open","3":"112","4":"126"},{"1":"101912010 - MADISON H S","2":"Open","3":"208","4":"207"},{"1":"101912011 - MILBY H S","2":"Open","3":"252","4":"181"},{"1":"101912012 - HEIGHTS H S","2":"Open","3":"250","4":"260"},{"1":"101912014 - STERLING H S","2":"Open","3":"166","4":"188"},{"1":"101912015 - WALTRIP H S","2":"Open","3":"215","4":"255"},{"1":"101912016 - WASHINGTON B T H S","2":"Open","3":"116","4":"96"},{"1":"101912017 - WESTBURY H S","2":"Open","3":"196","4":"204"},{"1":"101912018 - WHEATLEY H S","2":"Open","3":"101","4":"115"},{"1":"101912019 - WORTHING H S","2":"Open","3":"124","4":"99"},{"1":"101912020 - YATES H S","2":"Open","3":"137","4":"155"},{"1":"101912023 - SHARPSTOWN H S","2":"Open","3":"134","4":"114"},{"1":"101912024 - SCARBOROUGH H S","2":"Open","3":"68","4":"44"},{"1":"101912025 - KINDER H S FOR PERFORMING AND VISUAL ARTS","2":"Open","3":"20","4":"23"},{"1":"101912026 - DEBAKEY H S FOR HEALTH PROF","2":"Open","3":"19","4":"17"},{"1":"101912027 - CHAVEZ H S","2":"Open","3":"211","4":"182"},{"1":"101912034 - H S FOR LAW AND JUSTICE","2":"Open","3":"20","4":"17"},{"1":"101912036 - WESTSIDE H S","2":"Open","3":"214","4":"168"},{"1":"101912039 - T H ROGERS SCHOOL","2":"Open","3":"64","4":"40"},{"1":"101912041 - ATTUCKS MIDDLE","2":"Open","3":"82","4":"111"},{"1":"101912042 - BLACK MIDDLE","2":"Open","3":"162","4":"210"},{"1":"101912043 - BURBANK MIDDLE","2":"Open","3":"158","4":"177"},{"1":"101912044 - CULLEN MIDDLE","2":"Open","3":"85","4":"113"},{"1":"101912045 - DEADY MIDDLE","2":"Open","3":"82","4":"64"},{"1":"101912046 - EDISON MIDDLE","2":"Open","3":"84","4":"114"},{"1":"101912047 - FONVILLE MIDDLE","2":"Open","3":"84","4":"97"},{"1":"101912048 - CLIFTON MIDDLE","2":"Open","3":"45","4":"26"},{"1":"101912049 - HAMILTON MIDDLE","2":"Open","3":"152","4":"158"},{"1":"101912050 - HOLLAND MIDDLE","2":"Open","3":"74","4":"90"},{"1":"101912051 - HARTMAN MIDDLE","2":"Open","3":"105","4":"170"},{"1":"101912052 - HENRY MIDDLE","2":"Open","3":"92","4":"56"},{"1":"101912053 - HOGG MIDDLE","2":"Open","3":"163","4":"179"},{"1":"101912054 - NAVARRO MIDDLE","2":"Open","3":"60","4":"62"},{"1":"101912055 - MEYERLAND MIDDLE","2":"Open","3":"185","4":"181"},{"1":"101912056 - WELCH MIDDLE","2":"Open","3":"71","4":"102"},{"1":"101912057 - LANIER MIDDLE","2":"Open","3":"111","4":"108"},{"1":"101912058 - GREGORY-LINCOLN ED CTR","2":"Open","3":"66","4":"108"},{"1":"101912059 - LONG ACADEMY","2":"Open","3":"64","4":"43"},{"1":"101912060 - REVERE MIDDLE","2":"Open","3":"86","4":"122"},{"1":"101912061 - MARSHALL MIDDLE","2":"Open","3":"65","4":"83"},{"1":"101912062 - FLEMING MCREYNOLDS MIDDLE","2":"Open","3":"75","4":"77"},{"1":"101912064 - PERSHING MIDDLE","2":"Open","3":"165","4":"163"},{"1":"101912068 - TANGLEWOOD MIDDLE","2":"Open","3":"110","4":"163"},{"1":"101912069 - SOAR CENTER","2":"Open","3":"267","4":"39"},{"1":"101912071 - PROJECT CHRYSALIS MIDDLE","2":"Open","3":"22","4":"26"},{"1":"101912072 - FONDREN MIDDLE","2":"Open","3":"69","4":"104"},{"1":"101912075 - LAWSON MIDDLE","2":"Open","3":"162","4":"114"},{"1":"101912077 - THOMAS MIDDLE","2":"Open","3":"106","4":"49"},{"1":"101912078 - FLEMING MIDDLE","2":"Closed","3":"68","4":"0"},{"1":"101912079 - KEY MIDDLE","2":"Open","3":"91","4":"69"},{"1":"101912080 - RICE SCH /LA ESCUELA RICE","2":"Open","3":"146","4":"145"},{"1":"101912081 - SHARPSTOWN INTERNATIONAL SCHOOL","2":"Open","3":"108","4":"97"},{"1":"101912082 - WILLIAMS MIDDLE","2":"Open","3":"66","4":"36"},{"1":"101912097 - HCC LIFE SKILLS PROGRAM","2":"Open","3":"61","4":"66"},{"1":"101912098 - STEVENSON MIDDLE","2":"Open","3":"148","4":"117"},{"1":"101912099 - WEST BRIAR MIDDLE","2":"Open","3":"105","4":"97"},{"1":"101912100 - TEXAS CONNECTIONS ACADEMY AT HOUSTON","2":"Open","3":"1315","4":"1088"},{"1":"101912102 - ALCOTT EL","2":"Closed","3":"43","4":"0"},{"1":"101912104 - ALMEDA EL","2":"Open","3":"102","4":"114"},{"1":"101912105 - ANDERSON EL","2":"Open","3":"48","4":"84"},{"1":"101912106 - ATHERTON EL","2":"Open","3":"58","4":"54"},{"1":"101912107 - BARRICK EL","2":"Open","3":"28","4":"11"},{"1":"101912108 - BASTIAN EL","2":"Open","3":"74","4":"76"},{"1":"101912109 - BERRY EL","2":"Open","3":"76","4":"85"},{"1":"101912110 - BLACKSHEAR EL","2":"Open","3":"33","4":"10"},{"1":"101912111 - BONHAM EL","2":"Open","3":"80","4":"76"},{"1":"101912112 - BONNER EL","2":"Open","3":"79","4":"116"},{"1":"101912113 - RODERICK R PAIGE EL","2":"Open","3":"64","4":"58"},{"1":"101912114 - BRAEBURN EL","2":"Open","3":"117","4":"105"},{"1":"101912115 - DURHAM EL","2":"Open","3":"57","4":"43"},{"1":"101912116 - BRIARGROVE EL","2":"Open","3":"117","4":"96"},{"1":"101912117 - BRISCOE EL","2":"Closed","3":"50","4":"0"},{"1":"101912119 - BROOKLINE EL","2":"Open","3":"50","4":"27"},{"1":"101912120 - BROWNING EL","2":"Open","3":"44","4":"37"},{"1":"101912121 - BRUCE EL","2":"Open","3":"49","4":"34"},{"1":"101912122 - BURBANK EL","2":"Open","3":"111","4":"75"},{"1":"101912123 - CODWELL EL","2":"Open","3":"53","4":"54"},{"1":"101912124 - BURNET EL","2":"Open","3":"45","4":"33"},{"1":"101912125 - BURRUS EL","2":"Closed","3":"25","4":"0"},{"1":"101912127 - WOODSON SCHOOL","2":"Open","3":"62","4":"92"},{"1":"101912128 - LYONS EL","2":"Open","3":"69","4":"98"},{"1":"101912130 - CONDIT EL","2":"Open","3":"138","4":"112"},{"1":"101912131 - HALPIN EARLY CHILDHOOD CTR","2":"Open","3":"38","4":"39"},{"1":"101912132 - COOP EL","2":"Open","3":"55","4":"58"},{"1":"101912133 - CORNELIUS EL","2":"Open","3":"78","4":"62"},{"1":"101912135 - CROCKETT EL","2":"Open","3":"64","4":"55"},{"1":"101912136 - CUNNINGHAM EL","2":"Open","3":"86","4":"101"},{"1":"101912137 - DE CHAUMES EL","2":"Open","3":"59","4":"47"},{"1":"101912138 - DE ZAVALA EL","2":"Open","3":"21","4":"49"},{"1":"101912140 - DOGAN EL","2":"Open","3":"87","4":"52"},{"1":"101912144 - DURKEE EL","2":"Open","3":"64","4":"51"},{"1":"101912147 - ELIOT EL","2":"Open","3":"80","4":"94"},{"1":"101912148 - ELROD EL","2":"Open","3":"63","4":"33"},{"1":"101912149 - EMERSON EL","2":"Open","3":"62","4":"51"},{"1":"101912151 - BELL EL","2":"Open","3":"70","4":"67"},{"1":"101912152 - FIELD EL","2":"Open","3":"74","4":"59"},{"1":"101912153 - FONDREN EL","2":"Open","3":"72","4":"61"},{"1":"101912154 - FOSTER EL","2":"Open","3":"30","4":"21"},{"1":"101912155 - FRANKLIN EL","2":"Closed","3":"42","4":"0"},{"1":"101912156 - FROST EL","2":"Open","3":"67","4":"54"},{"1":"101912157 - GARDEN OAKS MONTESSORI","2":"Open","3":"157","4":"180"},{"1":"101912158 - GARDEN VILLAS EL","2":"Open","3":"42","4":"75"},{"1":"101912159 - GOLFCREST EL","2":"Open","3":"49","4":"30"},{"1":"101912162 - GREGG EL","2":"Open","3":"39","4":"36"},{"1":"101912163 - SUGAR GROVE ACADEMY","2":"Open","3":"76","4":"46"},{"1":"101912166 - HARRIS J R EL","2":"Open","3":"54","4":"39"},{"1":"101912167 - HARRIS R P EL","2":"Open","3":"21","4":"18"},{"1":"101912168 - HARTSFIELD EL","2":"Open","3":"49","4":"22"},{"1":"101912169 - HARVARD EL","2":"Open","3":"92","4":"100"},{"1":"101912170 - HELMS EL","2":"Open","3":"69","4":"65"},{"1":"101912171 - HENDERSON J EL","2":"Open","3":"40","4":"56"},{"1":"101912172 - HENDERSON N EL","2":"Closed","3":"32","4":"0"},{"1":"101912173 - HEROD EL","2":"Open","3":"81","4":"67"},{"1":"101912174 - HIGHLAND HTS EL","2":"Open","3":"64","4":"60"},{"1":"101912175 - HOBBY EL","2":"Open","3":"57","4":"51"},{"1":"101912178 - HORN EL","2":"Open","3":"94","4":"71"},{"1":"101912179 - MCGOWEN EL","2":"Open","3":"80","4":"39"},{"1":"101912180 - ISAACS EL","2":"Open","3":"35","4":"29"},{"1":"101912181 - JANOWSKI EL","2":"Open","3":"65","4":"65"},{"1":"101912182 - JEFFERSON EL","2":"Open","3":"58","4":"46"},{"1":"101912185 - KASHMERE GARDENS EL","2":"Open","3":"43","4":"28"},{"1":"101912186 - ROBINSON EL","2":"Open","3":"31","4":"48"},{"1":"101912187 - KELSO EL","2":"Open","3":"30","4":"22"},{"1":"101912188 - KENNEDY EL","2":"Open","3":"58","4":"53"},{"1":"101912189 - KOLTER EL","2":"Open","3":"146","4":"113"},{"1":"101912192 - LANTRIP EL","2":"Open","3":"59","4":"43"},{"1":"101912194 - LEWIS EL","2":"Open","3":"82","4":"43"},{"1":"101912195 - LOCKHART EL","2":"Open","3":"50","4":"46"},{"1":"101912196 - LONGFELLOW EL","2":"Open","3":"96","4":"105"},{"1":"101912197 - LOOSCAN EL","2":"Open","3":"22","4":"12"},{"1":"101912198 - LOVE EL","2":"Open","3":"42","4":"32"},{"1":"101912199 - LOVETT EL","2":"Open","3":"110","4":"78"},{"1":"101912201 - MACGREGOR EL","2":"Open","3":"63","4":"32"},{"1":"101912203 - MADING EL","2":"Open","3":"41","4":"66"},{"1":"101912204 - MEMORIAL EL","2":"Open","3":"73","4":"55"},{"1":"101912207 - MONTGOMERY EL","2":"Open","3":"59","4":"46"},{"1":"101912209 - NEFF ECC","2":"Open","3":"51","4":"53"},{"1":"101912210 - NORTHLINE EL","2":"Open","3":"41","4":"44"},{"1":"101912211 - OAK FOREST EL","2":"Open","3":"75","4":"83"},{"1":"101912212 - OATES EL","2":"Open","3":"31","4":"39"},{"1":"101912213 - OSBORNE EL","2":"Open","3":"34","4":"55"},{"1":"101912214 - PARK PLACE EL","2":"Open","3":"81","4":"73"},{"1":"101912215 - PARKER EL","2":"Open","3":"134","4":"120"},{"1":"101912216 - PATTERSON EL","2":"Open","3":"104","4":"120"},{"1":"101912217 - PECK EL","2":"Open","3":"63","4":"62"},{"1":"101912218 - PILGRIM ACADEMY","2":"Open","3":"105","4":"133"},{"1":"101912219 - PINEY POINT EL","2":"Open","3":"62","4":"26"},{"1":"101912220 - PLEASANTVILLE EL","2":"Open","3":"28","4":"68"},{"1":"101912221 - POE EL","2":"Open","3":"91","4":"76"},{"1":"101912222 - PORT HOUSTON EL","2":"Closed","3":"33","4":"0"},{"1":"101912223 - PUGH EL","2":"Open","3":"41","4":"22"},{"1":"101912224 - RED EL","2":"Open","3":"111","4":"88"},{"1":"101912225 - REYNOLDS EL","2":"Open","3":"58","4":"48"},{"1":"101912227 - MCNAMARA EL","2":"Open","3":"50","4":"52"},{"1":"101912228 - RIVER OAKS EL","2":"Open","3":"66","4":"69"},{"1":"101912229 - ROBERTS EL","2":"Open","3":"75","4":"60"},{"1":"101912231 - ROOSEVELT EL","2":"Open","3":"45","4":"82"},{"1":"101912232 - ROSS EL","2":"Closed","3":"36","4":"0"},{"1":"101912233 - RUCKER EL","2":"Open","3":"79","4":"60"},{"1":"101912234 - BAYLOR COLLEGE OF MEDICINE BIOTECH ACADEMY AT RUSK","2":"Open","3":"39","4":"49"},{"1":"101912237 - SCARBOROUGH EL","2":"Open","3":"78","4":"61"},{"1":"101912239 - SHEARN EL","2":"Open","3":"69","4":"67"},{"1":"101912240 - SHERMAN EL","2":"Open","3":"49","4":"88"},{"1":"101912241 - SINCLAIR EL","2":"Open","3":"103","4":"93"},{"1":"101912242 - SMITH EL","2":"Open","3":"69","4":"71"},{"1":"101912243 - THOMPSON EL","2":"Open","3":"55","4":"85"},{"1":"101912244 - SOUTHMAYD EL","2":"Open","3":"73","4":"119"},{"1":"101912245 - STEVENS EL","2":"Open","3":"77","4":"65"},{"1":"101912247 - YOUNG EL","2":"Open","3":"54","4":"22"},{"1":"101912248 - SUTTON EL","2":"Open","3":"102","4":"130"},{"1":"101912249 - TRAVIS EL","2":"Open","3":"102","4":"120"},{"1":"101912251 - TWAIN EL","2":"Open","3":"88","4":"84"},{"1":"101912252 - WAINWRIGHT EL","2":"Open","3":"45","4":"66"},{"1":"101912253 - WALNUT BEND EL","2":"Open","3":"86","4":"51"},{"1":"101912254 - WESLEY EL","2":"Open","3":"38","4":"45"},{"1":"101912255 - WEST UNIVERSITY EL","2":"Open","3":"126","4":"159"},{"1":"101912256 - WHARTON K-8 DUAL LANGUAGE ACADEMY","2":"Open","3":"67","4":"99"},{"1":"101912257 - WHIDBY EL","2":"Open","3":"44","4":"30"},{"1":"101912258 - WHITTIER EL","2":"Open","3":"53","4":"23"},{"1":"101912259 - ELLA J BAKER MONTESSORI SCHOOL","2":"Open","3":"128","4":"139"},{"1":"101912260 - WINDSOR VILLAGE EL","2":"Open","3":"54","4":"42"},{"1":"101912262 - GRISSOM EL","2":"Open","3":"45","4":"26"},{"1":"101912263 - LAW EL","2":"Open","3":"54","4":"13"},{"1":"101912264 - MITCHELL EL","2":"Open","3":"65","4":"74"},{"1":"101912265 - PETERSEN EL","2":"Open","3":"63","4":"21"},{"1":"101912267 - WHITE E EL","2":"Open","3":"53","4":"17"},{"1":"101912268 - BENBROOK EL","2":"Open","3":"27","4":"19"},{"1":"101912269 - SCROGGINS EL","2":"Open","3":"40","4":"24"},{"1":"101912271 - FOERSTER EL","2":"Open","3":"67","4":"21"},{"1":"101912273 - ASHFORD EL","2":"Open","3":"61","4":"47"},{"1":"101912274 - ASKEW EL","2":"Open","3":"91","4":"68"},{"1":"101912275 - BUSH EL","2":"Open","3":"72","4":"67"},{"1":"101912276 - SHADOWBRIAR EL","2":"Open","3":"66","4":"85"},{"1":"101912279 - TIJERINA EL","2":"Open","3":"59","4":"33"},{"1":"101912281 - SANCHEZ EL","2":"Open","3":"60","4":"71"},{"1":"101912283 - GARCIA EL","2":"Open","3":"45","4":"36"},{"1":"101912285 - VALLEY WEST EL","2":"Open","3":"75","4":"121"},{"1":"101912286 - HERRERA EL","2":"Open","3":"101","4":"63"},{"1":"101912287 - CAGE EL","2":"Open","3":"60","4":"36"},{"1":"101912289 - MARTINEZ C EL","2":"Open","3":"25","4":"59"},{"1":"101912290 - CRESPO EL","2":"Open","3":"61","4":"65"},{"1":"101912291 - GALLEGOS EL","2":"Open","3":"49","4":"115"},{"1":"101912292 - CARRILLO EL","2":"Open","3":"44","4":"47"},{"1":"101912295 - BENAVIDEZ EL","2":"Open","3":"49","4":"60"},{"1":"101912297 - DAVILA EL","2":"Open","3":"75","4":"72"},{"1":"101912298 - MARTINEZ R EL","2":"Open","3":"60","4":"43"},{"1":"101912299 - MILNE EL","2":"Open","3":"48","4":"28"},{"1":"101912301 - EASTWOOD ACADEMY","2":"Open","3":"26","4":"34"},{"1":"101912308 - NORTH HOUSTON EARLY COLLEGE H S","2":"Open","3":"13","4":"14"},{"1":"101912310 - HOUSTON MATH SCIENCE AND TECHNOLOGY CENTER","2":"Open","3":"264","4":"282"},{"1":"101912321 - ENERGIZED FOR STEM ACADEMY H S","2":"Open","3":"18","4":"25"},{"1":"101912322 - CARNEGIE VANGUARD H S","2":"Open","3":"10","4":"15"},{"1":"101912323 - CHALLENGE EARLY COLLEGE H S","2":"Open","3":"17","4":"19"},{"1":"101912337 - PIN OAK MIDDLE","2":"Open","3":"150","4":"183"},{"1":"101912338 - ORTIZ MIDDLE","2":"Open","3":"84","4":"94"},{"1":"101912342 - ENERGIZED FOR EXCELLENCE ACADEMY INC MIDDLE","2":"Open","3":"28","4":"26"},{"1":"101912344 - BRIARMEADOW CHARTER","2":"Open","3":"88","4":"64"},{"1":"101912345 - EAST EARLY COLLEGE H S","2":"Open","3":"14","4":"23"},{"1":"101912348 - HOUSTON ACADEMY FOR INTERNATIONAL STUDIES","2":"Open","3":"20","4":"22"},{"1":"101912351 - HARPER DAEP","2":"Closed","3":"17","4":"0"},{"1":"101912352 - FARIAS EARLY CHILDHOOD CENTER","2":"Open","3":"26","4":"34"},{"1":"101912353 - SCHOOL AT ST GEORGE PLACE","2":"Open","3":"86","4":"58"},{"1":"101912355 - KING EARLY CHILDHOOD CTR","2":"Open","3":"19","4":"32"},{"1":"101912357 - LAURENZO EARLY CHILDHOOD CTR","2":"Open","3":"16","4":"37"},{"1":"101912358 - COOK JR EL","2":"Open","3":"50","4":"78"},{"1":"101912359 - MORENO EL","2":"Open","3":"75","4":"55"},{"1":"101912360 - BELLFORT EARLY CHILDHOOD CENTER","2":"Open","3":"18","4":"32"},{"1":"101912364 - ENERGIZED FOR EXCELLENCE ACADEMY EL","2":"Open","3":"31","4":"20"},{"1":"101912369 - GROSS EL","2":"Open","3":"47","4":"29"},{"1":"101912372 - RODRIGUEZ EL","2":"Open","3":"120","4":"147"},{"1":"101912373 - SEGUIN EL","2":"Open","3":"78","4":"46"},{"1":"101912374 - TINSLEY EL","2":"Open","3":"46","4":"29"},{"1":"101912380 - R D S P D","2":"Open","3":"30","4":"27"},{"1":"101912382 - REAGAN K-8 EDUCATIONAL CTR","2":"Open","3":"114","4":"101"},{"1":"101912383 - DEANDA EL","2":"Open","3":"126","4":"131"},{"1":"101912389 - KETELSEN EL","2":"Open","3":"63","4":"76"},{"1":"101912390 - ENERGIZED FOR STEM ACADEMY MIDDLE","2":"Open","3":"13","4":"13"},{"1":"101912394 - NEFF EL","2":"Open","3":"91","4":"74"},{"1":"101912395 - HINES-CALDWELL","2":"Open","3":"69","4":"80"},{"1":"101912396 - RAY DAILY EL","2":"Open","3":"92","4":"81"},{"1":"101912402 - SECONDARY DAEP","2":"Open","3":"18","4":"48"},{"1":"101912456 - H S AHEAD ACADEMY","2":"Open","3":"19","4":"16"},{"1":"101912458 - MICKEY LELAND COLLEGE PREP ACAD FOR YOUNG MEN","2":"Open","3":"36","4":"48"},{"1":"101912460 - MANDARIN IMMERSION MAGNET SCHOOL","2":"Open","3":"51","4":"41"},{"1":"101912463 - YOUNG WOMEN'S COLLEGE PREP ACADEMY","2":"Open","3":"15","4":"21"},{"1":"101912467 - BAYLOR COLLEGE OF MEDICINE ACADEMY AT RYAN","2":"Open","3":"38","4":"43"},{"1":"101912468 - ENERGY INSTITUTE H S","2":"Open","3":"88","4":"82"},{"1":"101912470 - FONWOOD EARLY CHILDHOOD CTR","2":"Open","3":"30","4":"29"},{"1":"101912473 - HILLIARD EL","2":"Open","3":"82","4":"45"},{"1":"101912475 - ELMORE EL","2":"Open","3":"67","4":"54"},{"1":"101912476 - FOREST BROOK MIDDLE","2":"Open","3":"104","4":"143"},{"1":"101912477 - NORTH FOREST H S","2":"Open","3":"103","4":"127"},{"1":"101912478 - ARABIC IMMERSION MAGNET SCHOOL","2":"Open","3":"42","4":"35"},{"1":"101912479 - SHADYDALE EL","2":"Open","3":"103","4":"82"},{"1":"101912480 - MARSHALL EL","2":"Open","3":"67","4":"84"},{"1":"101912483 - MARK WHITE EL","2":"Open","3":"82","4":"37"},{"1":"101912485 - MIDDLE COLLEGE H S AT HCC FRAGA","2":"Open","3":"14","4":"10"},{"1":"101912486 - SOUTH EARLY COLLEGE H S","2":"Open","3":"21","4":"21"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="export" class="level2">
+<h2 class="anchored" data-anchor-id="export">Export</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>removal_enrollment <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">write_rds</span>(<span class="st">"data-processed/01-cleaning.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/abreyfogle3\.github\.io\/Special-Education\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
